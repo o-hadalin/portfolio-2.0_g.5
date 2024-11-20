@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Impact";
-  src: url("./src/fonts/impact.ttf") format("truetype");
+  src: url("../fonts/impact.woff") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

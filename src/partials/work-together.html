@@ -8,23 +8,71 @@
       <p class="contact-text">
         Contact me to transform your ideas into exceptional solutions.
       </p>
-      <address class="address">
-        <a class="address-link" href="tel:+380904567890">+38 090 456 78 90</a
-        ><a class="address-link" href="mailto:lloydjefferson@gmail"
-          >lloydjefferson@gmail</a
-        ><a
-          class="address-link"
-          href="https://maps.app.goo.gl/pFM8VSLDsqYCjLHq6"
-          target="_blank"
-          >USA, New York</a
-        >
-      </address>
+      <ul class="address">
+        <li>
+          <a class="address-link" href="tel:+380904567890">
+            <svg class="address-icon" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#icon-telephone"></use></svg
+            >+38 090 456 78 90
+          </a>
+        </li>
+        <li>
+          <a class="address-link" href="mailto:lloydjefferson@gmail">
+            <svg class="address-icon">
+              <use href="/img/sprite.svg#icon-message"></use></svg
+            >lloydjefferson@gmail
+          </a>
+        </li>
+        <li>
+          <a
+            class="address-link"
+            href="https://maps.app.goo.gl/pFM8VSLDsqYCjLHq6"
+            target="_blank"
+          >
+            <svg class="address-icon">
+              <use href="/img/sprite.svg#icon-location"></use></svg
+            >USA, New York
+          </a>
+        </li>
+      </ul>
     </div>
     <form class="contact-form">
-      <input class="contact-input" type="email" placeholder="Your email*" />
+      <input
+        name="email"
+        class="contact-input"
+        type="email"
+        placeholder="Your email*"
+        required
+      />
+      <svg class="filled-icon invalid">
+        <use href="/img/sprite.svg#icon-success-filled"></use>
+      </svg>
       <p class="message valid">Invalid email, try again</p>
-      <textarea class="contact-textarea" placeholder="Message"></textarea
-      ><button class="contact-btn" type="submit">SEND MESSAGE</button>
+      <textarea
+        name="message"
+        class="contact-textarea"
+        placeholder="Message*"
+        required
+      ></textarea>
+      <button class="contact-btn" type="submit">SEND MESSAGE</button>
     </form>
+  </div>
+
+  <!-- Modal -->
+  <div class="confirmation-modal-overlay">
+    <div class="confirmation-container">
+      <button class="close-confirmation-btn">
+        <svg class="close-icon">
+          <use href="/img/sprite.svg#icon-mob-close"></use>
+        </svg>
+      </button>
+      <h3 class="confirmation-title">
+        Thank you for your interest in cooperation!
+      </h3>
+      <p class="confirmation-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
   </div>
 </section>

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const modal = document.querySelector('.confirmation-modal-overlay');
   const closeModalButton = document.querySelector('.close-confirmation-btn');
   const errorMessage = document.querySelector('.message');
+  const iconValid = document.querySelector('.filled-icon');
 
   const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
@@ -23,11 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
       emailInput.classList.add('invalid');
       errorMessage.classList.remove('valid');
       errorMessage.classList.add('invalid');
+      iconValid.classList.add('invalid');
     } else {
       emailInput.classList.add('valid');
       emailInput.classList.remove('invalid');
       errorMessage.classList.add('valid');
       errorMessage.classList.remove('invalid');
+      iconValid.classList.remove('invalid');
     }
   });
 

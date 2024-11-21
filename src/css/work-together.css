@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
+  max-width: fit-content;
 }
 
 .address-link:hover,
@@ -70,6 +71,19 @@
 .contact-input {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.filled-icon {
+  fill: #009156;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 15px;
+  right: 17px;
+}
+
+.filled-icon.invalid {
+  display: none;
 }
 
 .message.valid {

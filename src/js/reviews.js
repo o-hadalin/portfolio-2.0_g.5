@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const fetchedReviews = await response.json();
 
-      // Combine hardcoded reviews with fetched reviews
       const allReviews = [...hardcodedReviews, ...fetchedReviews];
 
       renderReviews(allReviews, reviewsList);
@@ -96,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
       errorMessage.textContent = 'Not found';
       errorMessage.classList.remove('hidden');
 
-      // Fallback to hardcoded reviews only
       renderReviews(hardcodedReviews, reviewsList);
       swiper.update();
     }

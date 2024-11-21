@@ -1,3 +1,5 @@
+import Swal from 'sweetalert2';
+
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.contact-form');
   const emailInput = document.querySelector('.contact-input');
@@ -70,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     try {
       const response = await fetch(
-        'https://portfolio-js.b.goit.study/api/reqests',
+        'https://portfolio-js.b.goit.study/api/requests',
         {
           method: 'POST',
           headers: {
@@ -100,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
         icon: 'error',
         title: 'Oops...',
         text: 'Something went wrong!',
+        confirmButtonColor: '#00b068',
       });
     }
   });

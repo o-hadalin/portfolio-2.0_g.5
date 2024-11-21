@@ -65,13 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     if (!data.comment || data.comment.trim() === '') {
-      console.error('Comment is empty!');
       return;
     }
 
     try {
       const response = await fetch(
-        'https://portfolio-js.b.goit.study/api/requests',
+        'https://portfolio-js.b.goit.study/api/reqests',
         {
           method: 'POST',
           headers: {
@@ -95,11 +94,13 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.removeItem('message');
 
         iconValid.classList.add('invalid');
-      } else {
-        console.log('Response data did not contain title:', result);
       }
     } catch (error) {
-      console.error('Error:', error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+      });
     }
   });
 

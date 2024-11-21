@@ -1,3 +1,35 @@
 <section class="reviews">
-  <div class="container">Reviews code</div>
+  <h2>Reviews</h2>
+  <div class="swiper-container">
+    <ul class="swiper-wrapper" id="reviews-list">
+        <li class="swiper-slide">
+            <p class="review-text">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations</p>
+            <div class="reviewer-info">
+                <img class="review-photo" src="../img/Reviews/Natalia-Shevchenko.png" alt="Natalia Shevchenko's photo">
+                <p class="reviewer-name">Natalia Shevchenko</p>
+              </div>
+          </li>
+          <li class="swiper-slide">
+            <p class="review-text">I have the honor to recommend him as an exceptional professional in his field. His knowledge and expertise are undeniable. Cooperation with him always brings impressive results.</p>
+            <div class="reviewer-info">
+                <img class="review-photo" src="../img/Reviews/Dmytro-Nazarenko.png" alt="Dmytro Nazarenko's photo">
+                <p class="reviewer-name">Dmytro Nazarenko</p>
+              </div>
+          </li>
+    </ul>
+    <div class="swiper-buttons-container">
+      <button class="swiper-button-prev">
+        <svg class="icon">
+          <use href="../img/sprite.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-next">
+        <svg class="icon">
+          <use href="../img/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="error-message" class="hidden">Not found</div>
+  <script src="./js/reviews.js" type="module"></script>
 </section>

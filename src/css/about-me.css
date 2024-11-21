@@ -12,6 +12,13 @@
   margin-bottom: 40px;
 }
 
+.abt-me-img {
+  border-radius: 18px;
+  width: 320px;
+  height: 374px;
+  margin-bottom: 40px;
+}
+
 .bio {
   margin-bottom: 40px;
 }
@@ -31,13 +38,6 @@
   padding-top: 32px;
 }
 
-.abt-me-img {
-  border-radius: 18px;
-  width: 320px;
-  height: 374px;
-  margin-bottom: 40px;
-}
-
 .abt-me-tech {
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
   width: 4px;
   height: 4px;
   background: #00b068;
-  transform: rotate(-180deg);
+
   position: relative;
   left: 10px;
   top: 20px;
@@ -71,4 +71,65 @@
 .role-list-descr {
   color: #292929;
   margin-left: 32px;
+}
+
+/* tab-styles */
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  .abt-me-title {
+    font-size: 108px;
+  }
+
+  .abt-me-info {
+    display: flex;
+    gap: 32px;
+  }
+
+  .abt-me-img {
+    width: 336px;
+    height: 392px;
+    margin-top: 368px;
+    margin-bottom: 0;
+  }
+
+  .bio {
+    margin-bottom: 0;
+  }
+
+  .bio-descr {
+    width: 336px;
+  }
+
+  .educ-title,
+  .role-title,
+  .bio-title {
+    font-size: 36px;
+    line-height: 48px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .abt-me-info {
+    margin-bottom: 60px;
+  }
+
+  .abt-me-container {
+    background-image: url(/img/about-me/bg-about-tab.png);
+    background-repeat: no-repeat;
+    background-position: right 10px bottom 200px;
+    background-size: auto;
+  }
+
+  .abt-me-tech {
+    flex-direction: row;
+  }
+
+  .abt-me-educ {
+    width: 336px;
+  }
 }

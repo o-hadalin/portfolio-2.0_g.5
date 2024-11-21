@@ -1,4 +1,58 @@
+/* Загальний стиль */
 .tech-skills {
-    background-color: rgb(166, 69, 21);
-    text-align: center;
+  background-color: #f4f8f9;
+  padding: 20px 0;
+}
+
+/* Горизонтальна стрічка */
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-inner {
+  display: flex;
+  animation: horizontalMarquee 10s linear infinite;
+}
+
+.marquee-line {
+  flex-shrink: 0;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #333;
+}
+
+/* Анімація для горизонтальної стрічки */
+@keyframes horizontalMarquee {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Діагональна стрічка */
+.marquee-diagonal {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(+3deg); /* Нахил діагональної стрічки */
+  background-color: rgba(0, 128, 0, 0.05); /* Легкий зелений фон */
+}
+
+.marquee-inner-diagonal {
+  display: flex;
+  animation: diagonalMarquee 12s linear infinite; /* Інша швидкість */
+}
+
+/* Анімація для діагональної стрічки */
+@keyframes diagonalMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,3 +1,5 @@
+import Swal from 'sweetalert2';
+
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.contact-form');
   const emailInput = document.querySelector('.contact-input');
@@ -18,6 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.classList.remove('is-open');
   }
 
+  if (localStorage.getItem('email')) {
+    emailInput.value = localStorage.getItem('email');
+  }
+  if (localStorage.getItem('message')) {
+    messageInput.value = localStorage.getItem('message');
+  }
+
+  emailInput.addEventListener('input', function () {
+    localStorage.setItem('email', emailInput.value);
+  });
+
+  messageInput.addEventListener('input', function () {
+    localStorage.setItem('message', messageInput.value);
+  });
+
   emailInput.addEventListener('blur', function () {
     if (!emailPattern.test(emailInput.value)) {
       emailInput.classList.remove('valid');
@@ -34,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  form.addEventListener('submit', function (event) {
+  form.addEventListener('submit', async function (event) {
     event.preventDefault();
 
     if (!emailPattern.test(emailInput.value)) {
@@ -50,34 +67,44 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     if (!data.comment || data.comment.trim() === '') {
-      console.error('Comment is empty!');
       return;
     }
 
-    fetch('https://portfolio-js.b.goit.study/api/requests', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+    try {
+      const response = await fetch(
+        'https://portfolio-js.b.goit.study/api/requests',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
         }
-        return response.json();
-      })
-      .then(data => {
-        if (data.title) {
-          openModal();
-          form.reset();
-        } else {
-          console.log('Response data did not contain title:', data);
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+
+      if (result.title) {
+        openModal();
+        form.reset();
+
+        localStorage.removeItem('email');
+        localStorage.removeItem('message');
+
+        iconValid.classList.add('invalid');
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        confirmButtonColor: '#00b068',
       });
+    }
   });
 
   closeModalButton.addEventListener('click', closeModal);

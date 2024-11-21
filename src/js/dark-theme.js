@@ -1,5 +1,5 @@
 const themeToggle = document.querySelector("#toggle");
-const themeToggleMob = document.querySelector("#toggle-mob");
+// const themeToggleMob = document.querySelector("#toggle-mob");
 
 const currentTheme = localStorage.getItem("theme" || "light");
 
@@ -10,14 +10,14 @@ if (currentTheme === "dark") {
 } else {
     document.body.classList.remove("dark-theme");
     themeToggle.checked = false;
-    themeToggleMob.checked = false;
+    // themeToggleMob.checked = false;
 }
 
 themeToggle.addEventListener("change", changeThemeToggle);
-themeToggleMob.addEventListener("change", changeThemeToggle);
+// themeToggleMob.addEventListener("change", changeThemeToggle);
 
 function changeThemeToggle() {
-    const isDark = themeToggle.checked || themeToggleMob.checked;
+    const isDark = themeToggle.checked;
 
     if (isDark) {
         document.body.classList.add("dark-theme");
@@ -28,7 +28,7 @@ function changeThemeToggle() {
     }
 
     themeToggle.checked = isDark;
-    themeToggleMob.checked = isDark;
+    // themeToggleMob.checked = isDark;
 }
 
 

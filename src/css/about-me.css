@@ -121,7 +121,7 @@
   .abt-me-container {
     background-image: url(/img/about-me/bg-about-tab.png);
     background-repeat: no-repeat;
-    background-position: right 10px bottom 200px;
+    background-position: right 20px bottom 200px;
     background-size: auto;
   }
 
@@ -131,5 +131,53 @@
 
   .abt-me-educ {
     width: 336px;
+  }
+}
+
+/* desktop-styles */
+
+@media screen and (min-width: 1280px) {
+  .about-me {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+
+  .abt-me-title {
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+  .abt-me-info {
+    justify-content: flex-end;
+    gap: 136px;
+  }
+
+  .abt-me-img {
+    width: 384px;
+    height: 448px;
+    margin-top: 272px;
+  }
+
+  .bio-descr {
+    width: 488px;
+  }
+
+  .abt-me-info {
+    margin-bottom: 80px;
+  }
+
+  .abt-me-container {
+    background-image: url(/img/about-me/bg-about-desk.png);
+    background-position: right 35px bottom 300px;
+  }
+
+  .abt-me-tech {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 136px;
+  }
+
+  .abt-me-educ {
+    width: 384px;
   }
 }

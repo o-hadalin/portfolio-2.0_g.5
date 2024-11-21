@@ -1,4 +1,74 @@
 .about-me {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #f0f0f0;
+}
+
+.abt-me-title {
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  color: #292929;
+  margin-bottom: 40px;
+}
+
+.bio {
+  margin-bottom: 40px;
+}
+
+.bio-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #292929;
+}
+
+.bio-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 32px;
+}
+
+.abt-me-img {
+  border-radius: 18px;
+  width: 320px;
+  height: 374px;
+  margin-bottom: 40px;
+}
+
+.abt-me-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.educ-list-item::before,
+.role-list-item::before {
+  content: '';
+  display: inline-block;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background: #00b068;
+  transform: rotate(-180deg);
+  position: relative;
+  left: 10px;
+  top: 20px;
+}
+
+.educ-title,
+.role-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #292929;
+}
+
+.educ-list-descr,
+.role-list-descr {
+  color: #292929;
+  margin-left: 32px;
 }

@@ -97,7 +97,6 @@ input:checked+.slider:before {
   margin-left: 0;
   cursor: pointer;
   background-color: transparent;
-  /* fill: #1b414b; */
   border: none;
   stroke: currentColor;
 }

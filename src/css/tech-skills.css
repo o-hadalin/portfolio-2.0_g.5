@@ -1,58 +1,174 @@
 /* Загальний стиль */
 .tech-skills {
-  background-color: #f4f8f9;
-  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 244px;
+  margin-bottom: 80px;
 }
 
 /* Горизонтальна стрічка */
 .marquee {
-  overflow: hidden;
   position: relative;
+  z-index: 20;
 }
 
 .marquee-inner {
   display: flex;
+  width: max-content;
   animation: horizontalMarquee 10s linear infinite;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32px 0px;
+  background: #bcdfd1;
 }
 
 .marquee-line {
+  font-family: 'Poppins', sans-serif;
   flex-shrink: 0;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  white-space: nowrap;
-  color: #333;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
 }
-
+.dot {
+  color: #00b068;
+}
 /* Анімація для горизонтальної стрічки */
 @keyframes horizontalMarquee {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-/* Діагональна стрічка */
+/*------------- Діагональна стрічка------------------- */
+.dot-diagonal {
+  color: #831111;
+}
 .marquee-diagonal {
-  overflow: hidden;
-  position: relative;
-  transform: rotate(+3deg); /* Нахил діагональної стрічки */
-  background-color: rgba(0, 128, 0, 0.05); /* Легкий зелений фон */
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  padding: 32px 0px;
+  height: 104px;
+  background-color: var(--light-grey);
+  transform: rotate(+2deg);
 }
 
 .marquee-inner-diagonal {
   display: flex;
-  animation: diagonalMarquee 12s linear infinite; /* Інша швидкість */
+  animation: diagonalMarquee 12s linear infinite;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32px 0px;
+  width: 1392px;
+  height: 104px;
+  background: #e4e5e6;
+  transform: rotate(-2deg);
+  white-space: nowrap;
+}
+.marquee-line-diagonal {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #00b068;
 }
 
 /* Анімація для діагональної стрічки */
 @keyframes diagonalMarquee {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tech-skills {
+    width: 768px;
+    height: 280px;
+    margin-bottom: 124px;
+  }
+  .marquee-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    padding: 40px 0px;
+    width: 1517px;
+    height: 128px;
+    background: #bcdfd1;
+  }
+  .marquee-line {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #292929;
+  }
+  .marquee-diagonal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    padding: 40px 0px;
+    width: 1517px;
+    height: 128px;
+    background: #e4e5e6;
+    transform: rotate(+2deg);
+  }
+  .marquee-line-diagonal {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #00b068;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .tech-skills {
+    width: 1280px;
+    height: 280px;
+    margin-bottom: 164px;
+  }
+  .marquee-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    padding: 40px 0px;
+    width: 1517px;
+    height: 128px;
+    background: #bcdfd1;
+  }
+  .marquee-diagonal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    padding: 40px 0px;
+    width: 1517px;
+    height: 128px;
+    background: #e4e5e6;
+    transform: rotate(+2deg);
   }
 }

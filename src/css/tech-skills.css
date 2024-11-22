@@ -18,11 +18,9 @@
 .marquee-inner {
   display: flex;
   width: fit-content;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
   align-items: center;
   justify-content: flex-start;
-
-  gap: 16px;
   padding: 32px 0px;
 }
 .marquee-inner-horizontal {
@@ -38,6 +36,8 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #292929;
+  gap: 16px;
+  padding-left: 16px;
 }
 .dot {
   color: #00b068;
@@ -64,12 +64,13 @@
 }
 
 .marquee-inner-diagonal {
-  animation: marquee 12s linear infinite;
+  animation: marquee 24s linear infinite;
   /* padding: 32px 0px; */
   transform: rotate(-2deg);
   white-space: nowrap;
 }
 .marquee-line-diagonal {
+  display: flex;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -77,6 +78,8 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #00b068;
+  padding-left: 16px;
+  gap: 16px;
 }
 /* ------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {

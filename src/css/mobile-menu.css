@@ -54,7 +54,7 @@
   justify-content: center;
   cursor: pointer;
   background-color: transparent;
-  fill: #1b414b;
+  /* fill: #1b414b; */
   border: none;
   stroke: currentColor;
 }
@@ -71,7 +71,6 @@
   display: flex;
   justify-content: center;
   margin-top: auto;
-  /* padding: 16px 0; */
 }
 
 

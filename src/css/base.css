@@ -35,9 +35,16 @@ h2 {
 :root {
   --background-color: #ffffff;
   --text-color: #292929;
+  --icon-color: #1b414b;
 }
 
 body.dark-theme {
   --background-color: #1E2023;
   --text-color: #ffffff;
+  --icon-color: #ffff;
+}
+
+.icon-toggle-color {
+  fill: var(--icon-color);
+  transition: fill 0.3s ease;
 }

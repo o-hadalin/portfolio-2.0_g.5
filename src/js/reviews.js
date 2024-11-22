@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       768: {
         slidesPerView: 1,
       },
-      1024: {
+      1280: {
         slidesPerView: 2,
       },
     },
@@ -84,15 +84,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) throw new Error(`Failed to fetch reviews: ${response.status}`);
 
       const fetchedReviews = await response.json();
+<<<<<<< Updated upstream
 
       const allReviews = [...hardcodedReviews, ...fetchedReviews];
 
       renderReviews(allReviews, reviewsList);
 
+=======
+      renderReviews(fetchedReviews, reviewsList);
+>>>>>>> Stashed changes
       swiper.update();
     } catch (error) {
       console.error('Error fetching reviews:', error);
-      errorMessage.textContent = 'Not found';
+      errorMessage.textContent = 'Reviews not found';
       errorMessage.classList.remove('hidden');
 
       renderReviews(hardcodedReviews, reviewsList);
@@ -101,6 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderReviews(reviews, reviewsList) {
+<<<<<<< Updated upstream
+=======
+    reviewsList.innerHTML = '';
+
+>>>>>>> Stashed changes
     reviews.forEach((review) => {
       const listItem = document.createElement('li');
       listItem.className = 'swiper-slide';

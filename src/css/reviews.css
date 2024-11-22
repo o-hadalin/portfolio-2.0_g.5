@@ -1,5 +1,5 @@
 .reviews {
-    background-color: #Ffffff;
+    background-color: blue;
     text-align: center;
   }
   h2 {
@@ -28,12 +28,7 @@ text-align: center;
 padding: 20px;
 border-radius: 5px;
 }
-.swiper-button-prev {
-  order: 2;
-}
-.swiper-button-next {
-  order: 1;
-}
+
 .swiper-button-prev,
 .swiper-button-next {
   width: 48px;

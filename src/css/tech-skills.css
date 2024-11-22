@@ -1,9 +1,10 @@
 /* Загальний стиль */
+/* * {
+  border: 1px solid red !important;
+} */
 .tech-skills {
   position: relative;
-  overflow: hidden;
-  width: 360px;
-  height: 244px;
+  width: 100%;
   margin-bottom: 80px;
 }
 
@@ -11,23 +12,26 @@
 .marquee {
   position: relative;
   z-index: 20;
+  overflow-x: hidden;
 }
 
 .marquee-inner {
   display: flex;
-  width: max-content;
-  animation: horizontalMarquee 10s linear infinite;
+  width: fit-content;
+  animation: marquee 10s linear infinite;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: row;
+
   gap: 16px;
   padding: 32px 0px;
+}
+.marquee-inner-horizontal {
   background: #bcdfd1;
 }
-
 .marquee-line {
+  display: flex;
   font-family: 'Poppins', sans-serif;
-  flex-shrink: 0;
+  white-space: nowrap;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -39,7 +43,7 @@
   color: #00b068;
 }
 /* Анімація для горизонтальної стрічки */
-@keyframes horizontalMarquee {
+@keyframes marquee {
   0% {
     transform: translateX(0);
   }
@@ -50,29 +54,18 @@
 
 /*------------- Діагональна стрічка------------------- */
 .dot-diagonal {
-  color: #831111;
+  color: #292929;
 }
 .marquee-diagonal {
-  position: absolute;
-  width: 100%;
   z-index: 10;
-  padding: 32px 0px;
-  height: 104px;
-  background-color: var(--light-grey);
+  /* padding: 32px 0px; */
+  background: #e4e5e6;
   transform: rotate(+2deg);
 }
 
 .marquee-inner-diagonal {
-  display: flex;
-  animation: diagonalMarquee 12s linear infinite;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 16px;
-  padding: 32px 0px;
-  width: 1392px;
-  height: 104px;
-  background: #e4e5e6;
+  animation: marquee 12s linear infinite;
+  /* padding: 32px 0px; */
   transform: rotate(-2deg);
   white-space: nowrap;
 }
@@ -85,32 +78,14 @@
   text-transform: uppercase;
   color: #00b068;
 }
-
-/* Анімація для діагональної стрічки */
-@keyframes diagonalMarquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
+/* ------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .tech-skills {
-    width: 768px;
-    height: 280px;
     margin-bottom: 124px;
   }
   .marquee-horizontal {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    padding: 40px 0px;
-    width: 1517px;
-    height: 128px;
+    /* padding: 40px 0px; */
+
     background: #bcdfd1;
   }
   .marquee-line {
@@ -122,53 +97,23 @@
     color: #292929;
   }
   .marquee-diagonal {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    padding: 40px 0px;
-    width: 1517px;
-    height: 128px;
-    background: #e4e5e6;
-    transform: rotate(+2deg);
+    /* padding: 40px 0px; */
   }
   .marquee-line-diagonal {
     font-weight: 500;
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: #00b068;
   }
 }
 @media screen and (min-width: 1158px) {
   .tech-skills {
-    width: 1280px;
-    height: 280px;
     margin-bottom: 164px;
   }
   .marquee-horizontal {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    padding: 40px 0px;
-    width: 1517px;
-    height: 128px;
-    background: #bcdfd1;
+    /* padding: 40px 0px; */
   }
   .marquee-diagonal {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    padding: 40px 0px;
-    width: 1517px;
-    height: 128px;
-    background: #e4e5e6;
-    transform: rotate(+2deg);
+    /* padding: 40px 0px; */
   }
 }

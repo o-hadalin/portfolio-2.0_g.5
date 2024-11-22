@@ -1,4 +1,183 @@
 .about-me {
-    background-color: rgb(0, 255, 229);
-    text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f0f0f0;
+}
+
+.abt-me-title {
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  color: #292929;
+  margin-bottom: 40px;
+}
+
+.abt-me-img {
+  border-radius: 18px;
+  width: 320px;
+  height: 374px;
+  margin-bottom: 40px;
+}
+
+.bio {
+  margin-bottom: 40px;
+}
+
+.bio-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #292929;
+}
+
+.bio-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 32px;
+}
+
+.abt-me-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.educ-list-item::before,
+.role-list-item::before {
+  content: '';
+  display: inline-block;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background: #00b068;
+
+  position: relative;
+  left: 10px;
+  top: 20px;
+}
+
+.educ-title,
+.role-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #292929;
+}
+
+.educ-list-descr,
+.role-list-descr {
+  color: #292929;
+  margin-left: 32px;
+}
+
+/* tab-styles */
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding-top: 124px;
+    padding-bottom: 124px;
   }
+
+  .abt-me-title {
+    font-size: 108px;
+  }
+
+  .abt-me-info {
+    display: flex;
+    gap: 32px;
+  }
+
+  .abt-me-img {
+    width: 336px;
+    height: 392px;
+    margin-top: 368px;
+    margin-bottom: 0;
+  }
+
+  .bio {
+    margin-bottom: 0;
+  }
+
+  .bio-descr {
+    width: 336px;
+  }
+
+  .educ-title,
+  .role-title,
+  .bio-title {
+    font-size: 36px;
+    line-height: 48px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .abt-me-info {
+    margin-bottom: 60px;
+  }
+
+  .abt-me-container {
+    background-image: url(/img/about-me/bg-about-tab.png);
+    background-repeat: no-repeat;
+    background-position: right 20px bottom 200px;
+    background-size: auto;
+  }
+
+  .abt-me-tech {
+    flex-direction: row;
+  }
+
+  .abt-me-educ {
+    width: 336px;
+  }
+}
+
+/* desktop-styles */
+
+@media screen and (min-width: 1280px) {
+  .about-me {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+
+  .abt-me-title {
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+  .abt-me-info {
+    justify-content: flex-end;
+    gap: 136px;
+  }
+
+  .abt-me-img {
+    width: 384px;
+    height: 448px;
+    margin-top: 272px;
+  }
+
+  .bio-descr {
+    width: 488px;
+  }
+
+  .abt-me-info {
+    margin-bottom: 80px;
+  }
+
+  .abt-me-container {
+    background-image: url(/img/about-me/bg-about-desk.png);
+    background-position: right 35px bottom 300px;
+  }
+
+  .abt-me-tech {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 136px;
+  }
+
+  .abt-me-educ {
+    width: 384px;
+  }
+}

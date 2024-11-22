@@ -1,4 +1,122 @@
+/* Загальний стиль */
+/* * {
+  border: 1px solid red !important;
+} */
 .tech-skills {
-    background-color: rgb(166, 69, 21);
-    text-align: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* Горизонтальна стрічка */
+.marquee {
+  position: relative;
+  z-index: 20;
+  overflow-x: hidden;
+}
+
+.marquee-inner {
+  display: flex;
+  width: fit-content;
+  animation: marquee 20s linear infinite;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 0px;
+}
+.marquee-inner-horizontal {
+  background: #bcdfd1;
+}
+.marquee-line {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+  gap: 16px;
+  padding-left: 16px;
+}
+.dot {
+  color: #00b068;
+}
+/* Анімація для горизонтальної стрічки */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*------------- Діагональна стрічка------------------- */
+.dot-diagonal {
+  color: #292929;
+}
+.marquee-diagonal {
+  z-index: 10;
+  /* padding: 32px 0px; */
+  background: #e4e5e6;
+  transform: rotate(+2deg);
+}
+
+.marquee-inner-diagonal {
+  animation: marquee 24s linear infinite;
+  /* padding: 32px 0px; */
+  transform: rotate(-2deg);
+  white-space: nowrap;
+}
+.marquee-line-diagonal {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #00b068;
+  padding-left: 16px;
+  gap: 16px;
+}
+/* ------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .tech-skills {
+    margin-bottom: 124px;
+  }
+  .marquee-horizontal {
+    /* padding: 40px 0px; */
+
+    background: #bcdfd1;
+  }
+  .marquee-line {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #292929;
+  }
+  .marquee-diagonal {
+    /* padding: 40px 0px; */
+  }
+  .marquee-line-diagonal {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .tech-skills {
+    margin-bottom: 164px;
+  }
+  .marquee-horizontal {
+    /* padding: 40px 0px; */
+  }
+  .marquee-diagonal {
+    /* padding: 40px 0px; */
+  }
+}

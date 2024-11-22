@@ -1,5 +1,5 @@
 .faq {
-  background-color: #e4e5e6;
+  background-color: #f0f0f0;
 }
 
 .faq-photo {
@@ -35,13 +35,10 @@
 
 .faq-btn-svg {
   margin-left: 20px;
+  /* margin-left: -1px; */
   display: block;
   flex-shrink: 0;
   transition: transform 0.5s;
-}
-
-.faq-list-item {
-  border-bottom: 1px solid #e4e5e6;
 }
 
 .faq-list-item-text {
@@ -57,7 +54,7 @@
 
 .ac {
   margin-top: 0;
-  border-bottom: 1px solid #e4e5e6;
+
   background-color: transparent;
 }
 
@@ -101,8 +98,12 @@
 @media screen and (min-width: 1280px) {
   .faq-list {
     width: 592px;
-    height: 785px;
+    height: 719px;
     margin-left: auto;
+  }
+
+  .faq-btn-svg {
+    margin-left: 47px;
   }
 
   .wrapper {

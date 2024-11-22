@@ -1,5 +1,5 @@
-.faq {
-  background-color: #f0f0f0;
+.container {
+  padding-bottom: 43px;
 }
 
 .faq-photo {
@@ -73,6 +73,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    padding-bottom: 124px;
+  }
+
   .faq-logo {
     font-size: 108px;
     line-height: 1.14815;
@@ -96,6 +100,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .container {
+    padding-bottom: 160px;
+  }
   .faq-list {
     width: 592px;
     height: 719px;

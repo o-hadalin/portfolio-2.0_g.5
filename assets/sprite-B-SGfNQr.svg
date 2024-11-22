@@ -1,4 +1,4 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg aria-hidden="true"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-mob-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
@@ -49,6 +49,9 @@
 </symbol>
 <symbol id="icon-telephone" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M3 9c0 11.045 8.955 20 20 20h3c0.796 0 1.559-0.316 2.121-0.879s0.879-1.326 0.879-2.121v-1.829c0-0.688-0.468-1.288-1.136-1.455l-5.897-1.475c-0.587-0.147-1.203 0.073-1.564 0.556l-1.293 1.724c-0.376 0.501-1.025 0.723-1.613 0.507-2.183-0.803-4.165-2.070-5.81-3.714s-2.912-3.627-3.714-5.81c-0.216-0.588 0.005-1.237 0.507-1.613l1.724-1.293c0.484-0.361 0.703-0.979 0.556-1.564l-1.475-5.897c-0.081-0.324-0.268-0.612-0.532-0.818s-0.588-0.318-0.923-0.318h-1.829c-0.796 0-1.559 0.316-2.121 0.879s-0.879 1.326-0.879 2.121v3z"></path>
+</symbol>
+<symbol id="icon-Arrow" viewBox="0 0 60 32">
+<path d="M2 14c-1.105 0-2 0.895-2 2s0.895 2 2 2v-4zM59.414 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l12.728-12.728zM2 18h56v-4h-56v4z"></path>
 </symbol>
 </defs>
 </svg>

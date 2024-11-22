@@ -14,12 +14,35 @@
     />
     <script type="module" crossorigin src="/portfolio-2.0_g.5/index.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio-2.0_g.5/assets/vendor-FHk8j_P3.js">
-    <link rel="stylesheet" crossorigin href="/portfolio-2.0_g.5/assets/index-d5AFU9Ob.css">
+    <link rel="stylesheet" crossorigin href="/portfolio-2.0_g.5/assets/index-CWfB3uZj.css">
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-  <div class="container">Header code</div>
+    <header class="header container">
+  <div class="header-container">
+    <nav class="header-navigation">
+      <p class="header-logo">Lloyd<span class="green-span">Jefferson.</span></p>
+      <ul class="header-list">
+        <li><label class="switch">
+            <input type="checkbox" id="toggle" class="checkbox-toggle">
+            <span class="slider"></span>
+          </label></li>
+        <li class="header-list-item"><a class="header-link" href="#about-me">About me</a>
+        </li>
+        <li class="header-list-item"><a class="header-link" href="#my-project">Projects</a>
+        </li>
+        <li class="header-list-item"><a class="header-link" href="#work-together">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="menu-toggle js-open-menu"><svg class="mob-icon icon-toggle-color" width="32px"
+        height="32px">
+        <use href="../img/sprite.svg#icon-mob-open">
+
+        </use>
+      </svg>
+    </button>
+  </div>
 </header>
     <main>
       <!-- Section Hero -->
@@ -123,52 +146,43 @@
       <p class="contact-text">
         Contact me to transform your ideas into exceptional solutions.
       </p>
+
       <ul class="address">
         <li>
           <a class="address-link" href="tel:+380904567890">
             <svg class="address-icon" aria-hidden="true" focusable="false">
-              <use href="/portfolio-2.0_g.5/assets/sprite-m-Ji93XL.svg#icon-telephone"></use></svg
-            >+38 090 456 78 90
+              <use href="/portfolio-2.0_g.5/assets/sprite-B-SGfNQr.svg#icon-telephone"></use>
+            </svg>
+            +38 090 456 78 90
           </a>
         </li>
         <li>
           <a class="address-link" href="mailto:lloydjefferson@gmail">
             <svg class="address-icon">
-              <use href="/portfolio-2.0_g.5/assets/sprite-m-Ji93XL.svg#icon-message"></use></svg
-            >lloydjefferson@gmail
+              <use href="/portfolio-2.0_g.5/assets/sprite-B-SGfNQr.svg#icon-message"></use>
+            </svg>
+            lloydjefferson@gmail
           </a>
         </li>
         <li>
-          <a
-            class="address-link"
-            href="https://maps.app.goo.gl/pFM8VSLDsqYCjLHq6"
-            target="_blank"
-          >
+          <a class="address-link" href="https://maps.app.goo.gl/pFM8VSLDsqYCjLHq6" target="_blank">
             <svg class="address-icon">
-              <use href="/portfolio-2.0_g.5/assets/sprite-m-Ji93XL.svg#icon-location"></use></svg
-            >USA, New York
+              <use href="/portfolio-2.0_g.5/assets/sprite-B-SGfNQr.svg#icon-location"></use>
+            </svg>
+            USA, New York
           </a>
         </li>
       </ul>
+
     </div>
     <form class="contact-form">
-      <input
-        name="email"
-        class="contact-input"
-        type="email"
-        placeholder="Your email*"
-        required
-      />
+      <input name="email" class="contact-input" type="email" placeholder="Your email*" required />
       <svg class="filled-icon invalid">
-        <use href="/portfolio-2.0_g.5/assets/sprite-m-Ji93XL.svg#icon-success-filled"></use>
+        <use href="/portfolio-2.0_g.5/assets/sprite-B-SGfNQr.svg#icon-success-filled"></use>
       </svg>
       <p class="message valid">Invalid email, try again</p>
-      <textarea
-        name="message"
-        class="contact-textarea"
-        placeholder="Message*"
-        required
-      ></textarea>
+
+      <textarea name="message" class="contact-textarea" placeholder="Message*" required></textarea>
       <button class="contact-btn" type="submit">SEND MESSAGE</button>
     </form>
   </div>
@@ -178,7 +192,7 @@
     <div class="confirmation-container">
       <button class="close-confirmation-btn">
         <svg class="close-icon">
-          <use href="/portfolio-2.0_g.5/assets/sprite-m-Ji93XL.svg#icon-mob-close"></use>
+          <use href="/portfolio-2.0_g.5/assets/sprite-B-SGfNQr.svg#icon-mob-close"></use>
         </svg>
       </button>
       <h3 class="confirmation-title">
@@ -189,18 +203,38 @@
         opportunities for cooperation. Please stay in touch.
       </p>
     </div>
-  </div>
-</section>
-
+  </div> 
     </main>
     <!-- Footer -->
     <footer class="footer">
   <div class="container">Fotter code</div>
 </footer>
     <!-- Mobile menu -->
-    <section class="mobile-menu">
-  <div class="container">Mobile menu code</div>
-</section>
+    <div class="container mob-menu">
+  <div class="mob-nav">
+    <div class="header-mob">
+      <p class="header-logo">Lloyd<span class="green-span">Jefferson.</span></p>
+      <button type="button" class="menu-close js-close-menu">
+        <svg class="mob-icon icon-toggle-color" width="32px" height="32px">
+          <use href="../img/sprite.svg#icon-mob-close">
+          </use>
+        </svg>
+      </button>
+    </div>
+    <ul class="mob-list">
+      <li class="mob-list-item"><a class="header-link" href="#about-me">About me</a>
+      </li>
+      <li class="mob-list-item"><a class="header-link" href="#my-project">Projects</a>
+      </li>
+      <li class="mob-list-item"><a class="header-link" href="#work-together">Contacts</a>
+      </li>
+    </ul>
+    <label class="switch mob-switch">
+      <input type="checkbox" id="toggle" class="checkbox-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
     <!-- Script JS -->
   </body>
 </html>

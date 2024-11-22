@@ -1,5 +1,4 @@
 .reviews {
-    background-color: #ffffff;
     text-align: center;
   }
   h2 {
@@ -8,7 +7,6 @@ margin-bottom: 80px;
 }
 
 .swiper-container {
-  position: relative;
 width: 80%;
 max-width: 1440px;
 margin: 0 auto;
@@ -16,11 +14,12 @@ overflow: hidden;
 padding-bottom: 50px;
 }
 .swiper-buttons-container {
-  position: absolute;
+  padding-top: 24px;
   bottom: 24px;
   right: 24px;
   display: flex;
   gap: 24px;
+  justify-content: flex-end;
 }
 
 .swiper-slide {
@@ -34,19 +33,14 @@ border-radius: 5px;
   width: 48px;
   height: 48px;
   border-radius: 8px;
-border: 1px;
+border: 1px border #E4E5E6;
 padding: 12px;
 gap: 10px;
 color: #292929;
+fill: #292929;
 cursor: pointer;
 }
-.swiper-button-prev svg,
-.swiper-button-next svg {
-  width: 100%;
-  height: 100%;
-  fill: #f0f0f0;
-  transition: fill 0.3s ease;
-}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
 background-color: #BBBBBB;

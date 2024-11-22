@@ -1,4 +1,124 @@
-.faq {
-    background-color: rgb(255, 196, 0);
-    text-align: center;
+.container {
+  padding-bottom: 43px;
+}
+
+.faq-photo {
+  display: none;
+}
+
+.faq-logo {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+
+  margin-bottom: 40px;
+}
+
+.ac.faq-list-item .faq-list-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  padding: 28px 24px 0 28px;
+}
+
+.ac .ac-trigger::after {
+  content: none;
+}
+
+.faq-btn-svg {
+  margin-left: 20px;
+  /* margin-left: -1px; */
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.5s;
+}
+
+.faq-list-item-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 28px;
+}
+
+.ac {
+  margin-top: 0;
+
+  background-color: transparent;
+}
+
+.is-active {
+  background-color: #bcdfd1;
+  border-radius: 16px;
+  transition: background-color 0.5s ease;
+}
+
+.is-active .faq-btn-svg {
+  transform: rotate(180deg);
+}
+
+.ac-panel {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-bottom: 124px;
   }
+
+  .faq-logo {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    max-width: 592px;
+    margin-bottom: 60px;
+  }
+
+  .faq-list-item .faq-list-title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .faq-btn-svg {
+    margin-left: 13px;
+  }
+
+  .faq-photo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-bottom: 160px;
+  }
+  .faq-list {
+    width: 592px;
+    height: 719px;
+    margin-left: auto;
+  }
+
+  .faq-btn-svg {
+    margin-left: 47px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .faq-photo {
+    display: flex;
+  }
+}

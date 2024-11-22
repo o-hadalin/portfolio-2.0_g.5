@@ -1,10 +1,11 @@
-.container{
+.title-btn-cont{
+  padding-top: 92px;
   background-image: url(/img/hero/bg-hero-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom 150px left 16px;
+  background-position: bottom 234px right 60px;
+  background-size: 104%;
 }
 @media screen and (min-resolution: 192dpi){
-  .container{
+  .title-btn-cont{
     background-image: url(/img/hero/bg-hero-mob@2x.png);
   }
 }
@@ -12,11 +13,9 @@
   width: 360px;
   display: flex;
   flex-direction: column;
-  padding-top: 92px;
   padding-bottom: 52px;
   margin: 0 auto;
   gap: 40px;
-  
 }
 /* ------------------------------------------------- */
 .title-btn-cont {
@@ -38,12 +37,28 @@
   color: #292929;
 }
 .hero-btn {
+  padding-left: 8px;
+  padding-top: 32px;
   border-radius: 16px;
   width: 261px;
   height: 96px;
   border: 0;
   background-color: #bcdfd1;
   margin-left: 0px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.hero-btn::before{
+  content: url(/img/hero/hero-arrow.svg);
+  margin-right: 12px;
+}
+.hero-btn:hover:before{
+  fill: #fff;
 }
 .hero-btn:hover{
   background-color: #00b068;
@@ -97,25 +112,24 @@
   letter-spacing: 0.03em;
   color: var(--black);
 }
+.hero-list-item:hover{
+  color: #00b068;
+}
 /* ===================================================== */
 @media screen and (min-width: 768px){
-  .container {
+  .title-btn-cont {
+    background-repeat: repeat-y;
     background-image: url(/img/hero/bg-hero-tab.png);
-    background-position: bottom 202px left 156px;
+    background-position: bottom 396px right 0px;
+    background-size: 52%;
   }
   .hero-content-container {
     width: 704px;
     padding-top: 68px;
     padding-bottom: 84px;
-    background-image: url(/img/hero/bg-hero-tab.png);
-    background-position: bottom 612px left 342px;
-    background-repeat: no-repeat;
   }
 @media screen and (min-resolution: 192dpi) {
-  .container {
-    background-image: url(/img/hero/bg-hero-tab@2x.png);
-  }
-  .hero-content-container {
+  .title-btn-cont {
     background-image: url(/img/hero/bg-hero-tab@2x.png);
   }
 }
@@ -149,25 +163,26 @@
 }
 /* ======================================================== */
 @media screen and (min-width: 1280px){
-  .container {
+  .title-btn-cont {
+    background-repeat: no-repeat;
     background-image: url(/img/hero/bg-hero-desk.png);
-    background-position: bottom 60px left 214px;
+    background-position: top 370px right 0px;
+    background-size: 74%;
+    padding-bottom: 76px;
+    padding-top: 0;
   }
   .hero-content-container {
     width: 1216px;
-    padding-bottom: 76px;
+    padding-bottom: 0px;
     gap: 72px;
     display: flex;
     flex-direction: row;
+    background-repeat: no-repeat;
     background-image: url(/img/hero/bg-hero-desk.png);
-    background-position: bottom 596px left 800px;
+    background-position: bottom 608px left 724px;
   }
 @media screen and (min-resolution: 192dpi) {
-  .container {
-    background-image: url(/img/hero/bg-hero-desk@2x.png);
-  }
-
-  .hero-content-container {
+  .title-btn-cont {
     background-image: url(/img/hero/bg-hero-desk@2x.png);
   }
 }

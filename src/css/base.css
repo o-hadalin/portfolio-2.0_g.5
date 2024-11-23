@@ -33,6 +33,14 @@ h2 {
   color: #00b068;
 }
 
+.dark-theme .green-link:hover {
+  color: #14c57c
+}
+
+.dark-theme .green-span {
+  color: #14c57c;
+}
+
 :root {
   --background-color: #ffffff;
   --text-color: #292929;
@@ -41,7 +49,7 @@ h2 {
 
 body.dark-theme {
   --background-color: #1E2023;
-  --text-color: #ffffff;
+  --text-color: #f0f0f0;
   --icon-color: #ffff;
 }
 

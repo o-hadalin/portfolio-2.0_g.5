@@ -48,6 +48,15 @@
   text-transform: uppercase;
   color: var(--black);
 }
+
+.dark-theme .hero-btn {
+  background-color: #14c57c;
+}
+
+.dark-theme .hero-btn:hover {
+  background-color: #009156;
+}
+
 .decor-btn {
   margin-left: 166px;
   border-radius: 16px;
@@ -55,6 +64,7 @@
   height: 92px;
   background-color: #bcdfd1;
 }
+
 .hero-btn::before {
   content: url(/img/hero/hero-arrow.svg);
   margin-right: 12px;
@@ -115,6 +125,10 @@
   background-color: #e4e5e6;
 }
 
+body.dark-theme .hero-list {
+  background-color: #2a2d32;
+}
+
 .hero-list-item {
   font-family: var(--font-family);
   font-weight: 300;
@@ -122,6 +136,10 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: var(--black);
+}
+
+.dark-theme .hero-list-item:hover {
+  color: #14c57c;
 }
 
 .hero-list-item:hover {

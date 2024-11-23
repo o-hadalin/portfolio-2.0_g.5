@@ -1,3 +1,16 @@
+:root {
+  --background-input-color: #e4e5e6;
+}
+
+body.dark-theme {
+  --background-input-color: #2a2d32;
+}
+
+.icon-toggle-color {
+  stroke: var(--icon-color);
+  transition: fill 0.5s ease;
+}
+
 .work-together .container {
   display: flex;
   flex-direction: column;
@@ -63,11 +76,11 @@
   padding: 16px;
   outline: none;
   border: none;
-  background-color: #e4e5e6;
+  background-color: var(--background-input-color);
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--text-color);
 }
 
 .contact-input {
@@ -115,7 +128,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--text-color);
 }
 
 .contact-btn {
@@ -243,7 +256,7 @@
   left: 50%;
   border-radius: 16px;
   padding: 16px 32px 48px;
-  background: #f0f0f0;
+  background: var(--background-input-color);
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 316px;
@@ -266,7 +279,7 @@
   width: 24px;
   height: 24px;
   stroke-width: 2px;
-  stroke: #292929;
+  stroke: var(--text-color);
 }
 .confirmation-title {
   font-weight: 400;

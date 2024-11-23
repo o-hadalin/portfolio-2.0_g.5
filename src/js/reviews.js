@@ -10,16 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
       enabled: true,
       onlyInViewport: true,
     },
-    slidesPerView: 1,
+    slidesPerView: 'auto', // Automatically adjust based on content width
     spaceBetween: 20,
+    centeredSlides: false, // Optional: Adjust this based on design needs
+
     breakpoints: {
+      360: {
+        spaceBetween: 10, // Adjust spacing for small screens
+      },
       768: {
-        slidesPerView: 1,
+        spaceBetween: 20,
       },
       1280: {
-        slidesPerView: 2,
+        spaceBetween: 30,
       },
     },
+
     on: {
       slideChange: () => {
         updateButtonStates();
@@ -45,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const fetchedReviews = await response.json();
       renderReviews(fetchedReviews, reviewsList);
-      swiper.update();
+      swiper.update(); // Update Swiper after rendering new reviews
     } catch (error) {
       console.error('Error fetching reviews:', error);
       errorMessage.textContent = 'Reviews not found';
@@ -54,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderReviews(reviews, reviewsList) {
-    reviewsList.innerHTML = '';
+    reviewsList.innerHTML = ''; // Clear previous content
 
     reviews.forEach((review) => {
       const listItem = document.createElement('li');

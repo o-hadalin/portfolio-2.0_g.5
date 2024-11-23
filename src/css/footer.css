@@ -16,7 +16,6 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--text-color);
   font-family: 'Impact', sans-serif;
 }
 
@@ -31,6 +30,7 @@
   flex-direction: column;
   gap: 24px;
 }
+
 .footer-link {
   cursor: pointer;
 }

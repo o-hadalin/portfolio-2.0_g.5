@@ -90,8 +90,8 @@
   }
 
   .abt-me-img {
-    width: 336px;
-    height: 392px;
+    min-width: 336px;
+    min-height: 392px;
     margin-top: 368px;
     margin-bottom: 0;
   }
@@ -120,8 +120,14 @@
   .abt-me-container {
     background-image: url(/img/about-me/bg-about-tab.png);
     background-repeat: no-repeat;
-    background-position: right 20px bottom 200px;
-    background-size: auto;
+    background-position: right 0px bottom 300px;
+    background-size: 45%;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .abt-me-container {
+      background-image: url(/img/about-me/bg-about-tab@2x.png);
+    }
   }
 
   .abt-me-tech {
@@ -152,8 +158,8 @@
   }
 
   .abt-me-img {
-    width: 384px;
-    height: 448px;
+    min-width: 384px;
+    min-height: 448px;
     margin-top: 272px;
   }
 
@@ -167,7 +173,14 @@
 
   .abt-me-container {
     background-image: url(/img/about-me/bg-about-desk.png);
-    background-position: right 35px bottom 300px;
+    background-position: right 35px bottom 440px;
+    background-size: 30%;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .abt-me-container {
+      background-image: url(/img/about-me/bg-about-desk@2x.png);
+    }
   }
 
   .abt-me-tech {

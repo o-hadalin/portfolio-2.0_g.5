@@ -12,8 +12,6 @@
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
-
   margin-bottom: 40px;
 }
 
@@ -25,7 +23,6 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   padding: 28px 24px 0 28px;
 }
 
@@ -46,7 +43,6 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 28px;
@@ -106,6 +102,7 @@
   .container {
     padding-bottom: 160px;
   }
+
   .faq-list {
     width: 592px;
     height: 719px;

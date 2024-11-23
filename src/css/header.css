@@ -1,5 +1,3 @@
-.header {}
-
 .header-container {
   display: flex;
   flex-direction: row;
@@ -16,7 +14,6 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--text-color);
   font-family: "Impact", sans-serif;
 }
 
@@ -39,7 +36,6 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--text-color)
 }
 
 .header-link:focus,
@@ -117,10 +113,7 @@ input:checked+.slider:before {
 }
 
 @media screen and (min-width: 1220px) {
-
   .header-list {
     padding-left: 590px;
   }
 }
-
-@media screen and (min-width: 1440px) {}

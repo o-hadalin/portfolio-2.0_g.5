@@ -5,12 +5,22 @@
         <h1 class="hero-title">
           HELLO, I AM <span class="green-span">FULLSTACK DEVELOPER</span>
         </h1>
-        <a class="hero-btn" href="#work-together">ORDER THE PROJECT</a>
+        <div class="btn-decor-container">
+          <a class="hero-btn" href="#work-together">ORDER THE PROJECT</a>
+          <a class="decor-btn" href="#work-together"></a>
+        </div>
       </div>
       <div class="img-text-cont">
         <div class="img-bg-container">
-          <img class="hero-img" srcset="/img/hero/img-hero-desk@2x.jpg" src="./img/hero/img-hero-desk.jpg"
-            alt="some dude" />
+          <img
+            class="hero-img"
+            srcset="
+              ./img/hero/img-hero-desk.jpg    1x,
+              ./img/hero/img-hero-desk@2x.jpg 2x
+            "
+            src="./img/hero/img-hero-desk.jpg"
+            alt="some dude"
+          />
         </div>
         <p class="hero-text">
           I work with people all over the world to create

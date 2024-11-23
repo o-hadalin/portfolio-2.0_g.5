@@ -13,11 +13,11 @@
 <symbol id="icon-arrow-right" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M5.333 16h21.333M18.667 8l8 8-8 8"/>
 </symbol>
-<symbol id="icon-drop-up" viewBox="0 0 32 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 20l-8-8-8 8"></path>
+<symbol fill="none" viewBox="0 0 24 24" id="icon-drop-up" xmlns="http://www.w3.org/2000/svg">
+<path d="m18 15-6-6-6 6" stroke="#292929" stroke-width="2" stroke-linecap="round"/>
 </symbol>
-<symbol id="icon-drop-down" viewBox="0 0 32 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 12l-8 8-8-8"></path>
+<symbol fill="none" viewBox="0 0 24 24" id="icon-drop-down" xmlns="http://www.w3.org/2000/svg">
+<path d="m18 9-6 6-6-6" stroke="#292929" stroke-width="2" stroke-linecap="round"/>
 </symbol>
 <symbol id="icon-visit" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6.333 25.667l19.333-19.333M25.667 6.333h-18M25.667 6.333v18"></path>

@@ -22,17 +22,59 @@ h2 {
   bottom: 24px;
   right: 24px;
   display: flex;
-  gap: 24px;
+  flex-wrap: nowrap;
 }
 
 .swiper-slide {
   text-align: center;
   padding: 20px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #e4e5e6;
+  /* margin: 0 10px; */
+}
+
+.review-text {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-photo {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.swiper-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  gap: 24px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
+  position: static !important;
   width: 48px;
   height: 48px;
   border-radius: 8px;
@@ -49,11 +91,28 @@ h2 {
   height: 100%;
   fill: #f0f0f0;
   transition: fill 0.3s ease;
+  border: 1px solid #e4e5e6;
+  padding: 12px;
+  color: #292929;
+  fill: #292929;
+  cursor: pointer;
+
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: #BBBBBB;
+  background-color: #bbbbbb;
+}
+
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  color: #e4e5e6;
+  cursor: not-allowed;
+}
+
+.swiper-button-prev:disabled:hover,
+.swiper-button-next:disabled:hover {
+  background-color: transparent;
 }
 
 .swiper-button-prev::after,
@@ -76,6 +135,7 @@ h2 {
 
 .hidden {
   display: none;
+
 }
 
 .swiper-slide {

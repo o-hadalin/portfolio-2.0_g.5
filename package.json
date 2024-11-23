@@ -17,7 +17,7 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "simple-accordion": "^2.1.0",
+    "accordion-js": "^3.3.4",
     "sweetalert2": "^11.14.5",
     "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.2.0",

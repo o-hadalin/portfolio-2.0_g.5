@@ -1,5 +1,4 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-container', {
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       768: {
         slidesPerView: 1,
       },
-      1024: {
+      1280: {
         slidesPerView: 2,
       },
     },
@@ -44,42 +43,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (!response.ok) throw new Error(`Failed to fetch reviews: ${response.status}`);
 
-      const reviews = await response.json();
-
-      reviews.forEach((review) => {
-        const listItem = document.createElement('li');
-        listItem.className = 'swiper-slide';
-
-        const text = document.createElement('p');
-        text.className = 'review-text';
-        text.textContent = review.text;
-
-        const reviewerInfo = document.createElement('div');
-        reviewerInfo.className = 'reviewer-info';
-
-        const photo = document.createElement('img');
-        photo.className = 'review-photo';
-        photo.src = review.photo;
-        photo.alt = `${review.name}'s photo`;
-
-        const name = document.createElement('p');
-        name.className = 'reviewer-name';
-        name.textContent = review.name;
-
-        reviewerInfo.appendChild(photo);
-        reviewerInfo.appendChild(name);
-
-        listItem.appendChild(text);
-        listItem.appendChild(reviewerInfo);
-        reviewsList.appendChild(listItem);
-      });
-
+      const fetchedReviews = await response.json();
+      renderReviews(fetchedReviews, reviewsList);
       swiper.update();
     } catch (error) {
       console.error('Error fetching reviews:', error);
-      errorMessage.textContent = 'Not found';
+      errorMessage.textContent = 'Reviews not found';
       errorMessage.classList.remove('hidden');
     }
+  }
+
+  function renderReviews(reviews, reviewsList) {
+    reviewsList.innerHTML = '';
+
+    reviews.forEach((review) => {
+      const listItem = document.createElement('li');
+      listItem.className = 'swiper-slide';
+
+      const text = document.createElement('p');
+      text.className = 'review-text';
+      text.textContent = review.review;
+
+      const reviewerInfo = document.createElement('div');
+      reviewerInfo.className = 'reviewer-info';
+
+      const photo = document.createElement('img');
+      photo.className = 'review-photo';
+      photo.src = review.avatar_url;
+      photo.alt = `${review.author}'s photo`;
+
+      const name = document.createElement('p');
+      name.className = 'reviewer-name';
+      name.textContent = review.author;
+
+      reviewerInfo.appendChild(photo);
+      reviewerInfo.appendChild(name);
+
+      listItem.appendChild(text);
+      listItem.appendChild(reviewerInfo);
+      reviewsList.appendChild(listItem);
+    });
   }
 
   function updateButtonStates() {

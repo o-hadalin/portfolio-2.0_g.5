@@ -1,4 +1,117 @@
-.header {
-  background-color: blue;
-  text-align: center;
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-logo {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: "Impact", sans-serif;
+}
+
+.header-navigation {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-list {
+  display: none;
+  gap: 4px;
+  white-space: nowrap;
+  padding-left: 166px;
+  height: 24px;
+}
+
+.header-link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.header-link:focus,
+.header-link:hover {
+  color: #00b068;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929;
+  border-radius: 24px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: #00b068;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.switch input {
+  display: none;
+}
+
+input:checked+.slider {
+  background-color: #ccc;
+}
+
+input:checked+.slider:before {
+  transform: translateX(20px);
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  stroke: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-logo {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-list {
+    padding-left: 590px;
+  }
 }

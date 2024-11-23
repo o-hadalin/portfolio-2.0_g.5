@@ -1,14 +1,14 @@
 .about-me {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 }
 
 .abt-me-title {
   font-size: 52px;
   line-height: 1.23;
   letter-spacing: 0.03em;
-  color: #292929;
+  /* color: #292929; */
   margin-bottom: 40px;
 }
 
@@ -28,7 +28,7 @@
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #292929;
+  /* color: #292929; */
 }
 
 .bio-descr {
@@ -64,12 +64,12 @@
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #292929;
+  /* color: #292929; */
 }
 
 .educ-list-descr,
 .role-list-descr {
-  color: #292929;
+  /* color: #292929; */
   margin-left: 32px;
 }
 

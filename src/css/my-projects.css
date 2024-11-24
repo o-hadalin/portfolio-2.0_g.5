@@ -17,7 +17,7 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-color);
 }
 
 .list-projects {
@@ -53,7 +53,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--text-color);
 }
 
 .about-project {
@@ -63,7 +63,7 @@
   line-height: 125%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-color);
 }
 
 .visit-button {
@@ -71,7 +71,7 @@
   gap: 12px;
   align-items: center;
   background-color: #e4e5e6;
-  color: #292929;
+  color: var(--text-color);
   border-radius: 8px;
   padding: 12px 24px;
   width: 125px;
@@ -106,6 +106,7 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+  color: var(--text-color);
   background-color: transparent;
   text-decoration: underline;
   text-decoration-color: #00b068;
@@ -118,22 +119,12 @@
   color: #009156;
 }
 
-.body.dark-theme,
-.text-info,
-.about-project,
-.title-projects,
-.load-btn {
-  color: #f0f0f0;
-}
-
-body.dark-theme,
-.visit-button {
+.dark-theme .visit-button {
   background-color: #2a2d32;
   color: var(--text-color);
 }
 
-body.dark-theme,
-.visit-button:hover {
+.dark-theme .visit-button:hover {
   background-color: #3b3f45;
   color: var(--text-color);
 }

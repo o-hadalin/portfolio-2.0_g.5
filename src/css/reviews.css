@@ -10,16 +10,17 @@ h2 {
 
 .swiper-container {
   position: relative;
-  width: 80%;
-  max-width: 1440px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding-bottom: 50px;
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 50px;
 }
 body.dark-theme .swiper-slide {
   background-color: #2A2D32;
 color: #F0F0F0;
 }
+
 
 .swiper-buttons-container {
   position: absolute;
@@ -37,9 +38,9 @@ color: #F0F0F0;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  text-align: center;
-  padding: 20px;
-  border-radius: 16px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
   background-color: #e4e5e6;
   margin-right: 32px;
 }
@@ -107,20 +108,63 @@ body.dark-theme .review-text {
   justify-content: flex-end;
   margin-top: 24px;
   gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #e4e5e6;
+  /* margin: 0 10px; */
+}
+
+.review-text {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-photo {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.swiper-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  gap: 24px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   position: static !important;
+  position: static !important;
   width: 48px;
   height: 48px;
   border-radius: 8px;
-  border: 1px;
-  padding: 12px;
-  gap: 10px;
-  color: #292929;
-  cursor: pointer;
+    border: 1px;
+    padding: 12px;
+    gap: 10px;
+    color: #292929;
+    cursor: pointer;
 }
+
 
 .swiper-button-prev svg,
 .swiper-button-next svg {
@@ -172,26 +216,28 @@ body.dark-theme .swiper-button-prev:disabled,
   background-color: #2A2D32;
 }
 
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none !important;
 }
 
 .swiper-button-disabled {
-  color: #E4E5E6;
-  cursor: not-allowed;
-  pointer-events: none;
+    color: #E4E5E6;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 #error-message {
-  margin-top: 20px;
-  color: red;
-  font-size: 18px;
-  display: none;
+    margin-top: 20px;
+    color: red;
+    font-size: 18px;
+    display: none;
 }
 
 .hidden {
-  display: none;
+    display: none;
+
 
 }
 
@@ -226,6 +272,6 @@ body.dark-theme .swiper-button-prev:disabled,
 }
 
 .reviewer-name {
-  font-weight: bold;
-  margin-top: 8px;
+    font-weight: bold;
+    margin-top: 8px;
 }

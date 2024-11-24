@@ -10,7 +10,7 @@
 2. **Скрам-майстер**: Інна ХАЛАС ([Inna-Khalas](https://github.com/Inna-Khalas))  
 3. Андрій РУТС ([AndreyRuts](https://github.com/AndreyRuts))  
 4. Олексій ЗЕМЛЯНИЙ ([belzevool](https://github.com/belzevool))  
-5. Валерія КАЛАШНІКОВА ([Pepe10k](https://github.com/Pepe10k))  
+5. Валерія КАЛАШНИКОВА ([Pepe10k](https://github.com/Pepe10k))  
 6. Інна МІЩЕНКО ([inkamish](https://github.com/inkamish))  
 7. Павло НІКОЛАЙЧУК ([VPashaNikolaichuk](https://github.com/VPashaNikolaichuk))  
 8. Володимир КОМАРНИЦЬКИЙ ([Volodymyr10020](https://github.com/Volodymyr10020))  

@@ -1,7 +1,7 @@
 # Командний Проєкт  
 
-- **Курс**: Fullstack Developer від школи GoIT  
-- **Базові навички теми навчального блоку**: HTML, CSS, JavaScript  
+- **Курс**: Fullstack Developer від школи GoIT;  
+- **Базові навички теми навчального блоку**: HTML, CSS, JavaScript;  
 - **Мета проєкту**: Створення адаптивного та інтерактивного вебсайту на основі [макету Figma](https://www.figma.com/design/R2BT8YRm3yXvkhO5CFxuGU/Portfolio-2.0?node-id=0-1&node-type=canvas&t=IbGrpjZN9Mis9WzZ-0).  
 
 ## Учасники  

@@ -10,16 +10,25 @@ document.addEventListener('DOMContentLoaded', () => {
       enabled: true,
       onlyInViewport: true,
     },
-    slidesPerView: 1,
-    spaceBetween: 20,
+    slidesPerView: `auto`, 
+    slidesPerGroup: 1,
+    spaceBetween: 0,
+    centeredSlides: false,
+    loop: false,
+    freeMode: false,
+
     breakpoints: {
+      360: {
+        spaceBetween: 0, 
+      },
       768: {
-        slidesPerView: 1,
+        spaceBetween: 0,
       },
       1280: {
-        slidesPerView: 2,
+        spaceBetween: 0,
       },
     },
+
     on: {
       slideChange: () => {
         updateButtonStates();

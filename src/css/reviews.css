@@ -10,12 +10,17 @@ h2 {
 
 .swiper-container {
   position: relative;
-  width: 80%;
-  max-width: 1440px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding-bottom: 50px;
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 50px;
 }
+body.dark-theme .swiper-slide {
+  background-color: #2A2D32;
+color: #F0F0F0;
+}
+
 
 .swiper-buttons-container {
   position: absolute;
@@ -27,8 +32,82 @@ h2 {
 
 .swiper-slide {
   text-align: center;
-  padding: 20px;
+  padding: 32px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+  background-color: #e4e5e6;
+  margin-right: 32px;
+}
+
+
+@media (min-width: 1280px) {
+  .swiper-slide {
+    width: 592px;    
+    flex-basis: 592px;
+  }
+  .review-text {
+    max-width: 528px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .swiper-slide {
+    width: 704px;
+    flex-basis: 704px;
+  }
+  .review-text {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-slide {
+    width: 320px;    
+    flex-basis: 320px;
+  }
+  .review-text {
+    max-width: 320px;
+  }
+}
+
+.review-text {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  text-align: left;
+}
+body.dark-theme .review-text {
+  color: #F0F0F0;
+}
+.reviewer-info {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+.review-photo {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.swiper-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  gap: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,15 +154,17 @@ h2 {
 .swiper-button-prev,
 .swiper-button-next {
   position: static !important;
+  position: static !important;
   width: 48px;
   height: 48px;
   border-radius: 8px;
-  border: 1px;
-  padding: 12px;
-  gap: 10px;
-  color: #292929;
-  cursor: pointer;
+    border: 1px;
+    padding: 12px;
+    gap: 10px;
+    color: #292929;
+    cursor: pointer;
 }
+
 
 .swiper-button-prev svg,
 .swiper-button-next svg {
@@ -97,6 +178,18 @@ h2 {
   fill: #292929;
   cursor: pointer;
 
+}
+body.dark-theme .swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 100%;
+  height: 100%;
+  fill: #2A2D32;
+  transition: fill 0.3s ease;
+  border: 1px solid #e4e5e6;
+  padding: 12px;
+  color: #f0f0f0;
+  fill: #f0f0f0;
+  cursor: pointer;
 }
 
 .swiper-button-prev:hover,
@@ -114,6 +207,15 @@ h2 {
 .swiper-button-next:disabled:hover {
   background-color: transparent;
 }
+body.dark-theme .swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #2A2D32;
+}
+body.dark-theme .swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  background-color: #2A2D32;
+}
+
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -121,20 +223,21 @@ h2 {
 }
 
 .swiper-button-disabled {
-  color: #E4E5E6;
-  cursor: not-allowed;
-  pointer-events: none;
+    color: #E4E5E6;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 #error-message {
-  margin-top: 20px;
-  color: red;
-  font-size: 18px;
-  display: none;
+    margin-top: 20px;
+    color: red;
+    font-size: 18px;
+    display: none;
 }
 
 .hidden {
-  display: none;
+    display: none;
+
 
 }
 
@@ -169,6 +272,6 @@ h2 {
 }
 
 .reviewer-name {
-  font-weight: bold;
-  margin-top: 8px;
+    font-weight: bold;
+    margin-top: 8px;
 }

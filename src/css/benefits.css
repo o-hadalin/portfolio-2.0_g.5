@@ -53,7 +53,7 @@
 }
 
 .benefits-item-title {
-    font-family: Impact, sans-serif;
+    font-family: var(--font-poppins-light);
     font-size: 18px;
     font-weight: 400;
     line-height: 156%;
@@ -63,7 +63,7 @@
 }
 
 .benefits-item-content {
-    font-family: Impact, sans-serif;
+    font-family: var(--font-poppins-light);
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;

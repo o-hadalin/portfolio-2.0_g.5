@@ -76,7 +76,7 @@
   padding: 12px 24px;
   width: 125px;
   height: 48px;
-  margin-left: auto;
+  /* margin-left: auto; */
   border: none;
   font-weight: 500;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -180,7 +180,7 @@
   .about-project {
     font-size: 36px;
     line-height: 133%;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.05em;
   }
 
   .visit-button {
@@ -213,6 +213,9 @@
     width: 1008px;
     height: 580px;
     overflow: hidden;
+  }
+  .about-project {
+    letter-spacing: 0.01em;
   }
 
   .info-container {

@@ -33,7 +33,7 @@ color: #F0F0F0;
 }
 
 .swiper-slide {
-  text-align: center;
+  text-align: left;
   padding: 32px;
   border-radius: 5px;
   display: flex;
@@ -215,7 +215,7 @@ body.dark-theme .swiper-button-prev:disabled,
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   background-color: #E4E5E6;
   border-radius: 16px;

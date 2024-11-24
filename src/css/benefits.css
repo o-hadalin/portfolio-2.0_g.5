@@ -1,13 +1,16 @@
-.svg-user,
-.svg-chat,
-.svg-brush,
-.svg-hourglass {
+.svg-chat {
     stroke: #00b068;
     fill: #bcdfd1;
     background-color: #bcdfd1;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 16px;
+}
+
+.dark-theme .svg-chat {
+    stroke: #00b068;
+    fill: #204136;
+    background-color: #204136;
 }
 
 .benefits-list {

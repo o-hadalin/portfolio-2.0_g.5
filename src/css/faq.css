@@ -26,6 +26,10 @@
   padding: 28px 24px 0 28px;
 }
 
+.dark-theme .faq-list-title {
+  color: var(--text-color)
+}
+
 .ac .ac-trigger::after {
   content: none;
 }
@@ -61,6 +65,10 @@
   background-color: #bcdfd1;
   border-radius: 16px;
   transition: background-color 0.5s ease;
+}
+
+.dark-theme .is-active {
+  background-color: #204136;
 }
 
 .is-active .faq-btn-svg {

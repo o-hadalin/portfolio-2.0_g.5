@@ -31,6 +31,12 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .mob-menu {
+    background-image: url('../img/hero/bg-hero-mob@2x.png');
+  }
+}
+
 .mob-nav {
   display: flex;
   flex-direction: column;
@@ -53,7 +59,6 @@
   justify-content: center;
   cursor: pointer;
   background-color: transparent;
-  /* fill: #1b414b; */
   border: none;
   stroke: currentColor;
 }
@@ -71,7 +76,6 @@
   justify-content: center;
   margin-top: auto;
 }
-
 
 @media screen and (min-width: 768px) {
   .mob-menu {

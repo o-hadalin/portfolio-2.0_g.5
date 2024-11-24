@@ -1,12 +1,14 @@
 .my-projects {
   text-align: center;
 }
+
 .my-projects .container {
   min-width: 320px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .title-projects {
@@ -15,18 +17,21 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-color);
 }
+
 .list-projects {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
 .project-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .container-image {
   border-radius: 16px;
   width: 320px;
@@ -34,20 +39,23 @@
   overflow: hidden;
   border: none;
 }
+
 .info-container {
   width: 320px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .text-info {
   text-align: left;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--text-color);
 }
+
 .about-project {
   text-align: left;
   font-weight: 500;
@@ -55,14 +63,15 @@
   line-height: 125%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-color);
 }
+
 .visit-button {
   display: flex;
   gap: 12px;
   align-items: center;
   background-color: #e4e5e6;
-  color: #292929;
+  color: var(--text-color);
   border-radius: 8px;
   padding: 12px 24px;
   width: 125px;
@@ -76,20 +85,17 @@
 .visit-button:hover {
   background-color: #bbbbbb;
 }
+
 .icon-button {
   stroke-width: 2px;
   stroke: #00b068;
   fill: transparent;
 }
+
 .list-project-item {
   display: flex;
 }
-/* .list-project-item {
-  display: none;
-}
-.list-project-item[data-visible='true'] {
-  display: flex;
-} */
+
 .load-btn {
   padding: 12px 24px;
   margin: 0 auto;
@@ -100,6 +106,7 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+  color: var(--text-color);
   background-color: transparent;
   text-decoration: underline;
   text-decoration-color: #00b068;
@@ -112,27 +119,28 @@
   color: #009156;
 }
 
-.body.dark-theme,
-.text-info,
-.about-project,
-.title-projects,
-.load-btn {
-  color: #f0f0f0;
-}
-.body.dark-theme,
-.visit-button {
+.dark-theme .visit-button {
   background-color: #2a2d32;
+  color: var(--text-color);
 }
 
-.body.dark-theme .visit-button:hover {
+.dark-theme .visit-button:hover {
   background-color: #3b3f45;
+  color: var(--text-color);
 }
+.body.dark-theme,
+.load-btn:hover {
+  color: #009156;
+}
+
 @media (min-width: 768px) {
   .my-projects .container {
     min-width: 768px;
     padding: 0px 32px;
     gap: 60px;
+    padding-bottom: 124px;
   }
+
   .title-projects {
     text-align: center;
     font-size: 108px;
@@ -140,23 +148,27 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
-  .list-project {
+  .list-projects {
     gap: 60px;
   }
+
   .container-image {
     border-radius: 24px;
     width: 704px;
     height: 404px;
     overflow: hidden;
   }
+
   .project-container {
     gap: 16px;
   }
+
   .info-container {
     width: 704px;
     position: relative;
     display: flex;
   }
+
   .text-info {
     text-align: left;
     font-weight: 300;
@@ -164,11 +176,13 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
   }
+
   .about-project {
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
   }
+
   .visit-button {
     border-radius: 8px;
     margin-left: none;
@@ -176,6 +190,7 @@
     right: 0;
     bottom: 0;
   }
+
   .load-btn {
     font-size: 20px;
     line-height: 160%;
@@ -185,12 +200,15 @@
 @media (min-width: 1280px) {
   .my-projects .container {
     gap: 80px;
-    padding: 0px 136px;
+    padding-left: 136px;
+    padding-right: 136px;
+    padding-bottom: 164px;
     min-width: 1280px;
   }
-  .list-project {
+  .list-projects {
     gap: 80px;
   }
+
   .container-image {
     width: 1008px;
     height: 580px;

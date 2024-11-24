@@ -25,7 +25,6 @@
 .benefits-item-title {
     font-size: 20px;
     letter-spacing: 0.5px;
-
     margin-bottom: 16px;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -33,8 +32,6 @@
 
 
 .benefits-h2 {
-    font-family: Impact, sans-serif;
-
     letter-spacing: 0.03em;
     font-size: 52px;
     font-weight: 400;
@@ -67,8 +64,6 @@
 
 @media screen and (min-width: 360px) {
     .benefits-h2 {
-        font-family: Impact, sans-serif;
-
         letter-spacing: 0.03em;
         font-size: 52px;
         font-weight: 400;
@@ -105,14 +100,10 @@
     }
 }
 
-
-
 @media screen and (min-width: 768px) {
     .benefits-h2 {
-        font-family: Impact, sans-serif;
         letter-spacing: 0.016em;
         font-size: 108px;
-
         line-height: 115%;
         margin-bottom: 0;
         width: 704px;
@@ -150,7 +141,6 @@
 
 @media screen and (min-width: 1280px) {
     .benefits-h2 {
-        font-family: Impact, sans-serif;
         width: 681px;
         height: 372px;
     }

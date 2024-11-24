@@ -118,10 +118,11 @@
   color: #009156;
 }
 
-/* .body.dark-theme .text-info,
-.body.dark-theme .about-project,
-.body.dark-theme .title-projects,
-.body.dark-theme .load-btn {
+.body.dark-theme,
+.text-info,
+.about-project,
+.title-projects,
+.load-btn {
   color: #f0f0f0;
 }
 
@@ -131,13 +132,15 @@ body.dark-theme,
   color: var(--text-color);
 }
 
-body.dark-theme .visit-button:hover {
+body.dark-theme,
+.visit-button:hover {
   background-color: #3b3f45;
   color: var(--text-color);
 }
-.body.dark-theme .load-btn:hover {
+.body.dark-theme,
+.load-btn:hover {
   color: #009156;
-}  */
+}
 
 @media (min-width: 768px) {
   .my-projects .container {
@@ -206,6 +209,8 @@ body.dark-theme .visit-button:hover {
 @media (min-width: 1280px) {
   .my-projects .container {
     gap: 80px;
+    padding-left: 136px;
+    padding-right: 136px;
     padding-bottom: 164px;
     min-width: 1280px;
   }

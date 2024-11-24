@@ -24,7 +24,7 @@
 .title-btn-cont {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
 }
 
 .hero-title {
@@ -37,15 +37,13 @@
   text-transform: uppercase;
 }
 
+.btn-decor-container {
+  display: flex;
+}
+
 .hero-btn {
-  padding-left: 8px;
-  padding-top: 32px;
-  border-radius: 16px;
-  width: 261px;
-  height: 96px;
-  border: 0;
-  background-color: #bcdfd1;
-  margin-left: 0px;
+  position: absolute;
+  margin-top: 32px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
@@ -55,16 +53,32 @@
   color: var(--black);
 }
 
+.dark-theme .decor-btn {
+  background-color: #14c57c;
+}
+
+.dark-theme .decor-btn:hover {
+  background-color: #009156;
+}
+
+.decor-btn {
+  margin-left: 166px;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  background-color: #bcdfd1;
+}
+
 .hero-btn::before {
   content: url(/img/hero/hero-arrow.svg);
   margin-right: 12px;
 }
 
-.hero-btn:hover:before {
-  fill: #fff;
+.hero-btn:hover+.decor-btn {
+  background-color: #00b068;
 }
 
-.hero-btn:hover {
+.decor-btn:hover {
   background-color: #00b068;
 }
 
@@ -115,6 +129,10 @@
   background-color: #e4e5e6;
 }
 
+body.dark-theme .hero-list {
+  background-color: #2a2d32;
+}
+
 .hero-list-item {
   font-family: var(--font-family);
   font-weight: 300;
@@ -122,6 +140,10 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: var(--black);
+}
+
+.dark-theme .hero-list-item:hover {
+  color: #14c57c;
 }
 
 .hero-list-item:hover {
@@ -156,6 +178,14 @@
     font-size: 124px;
     line-height: 119%;
     letter-spacing: 0.01em;
+  }
+
+  .decor-btn {
+    margin-left: 155px;
+    border-radius: 16px;
+    width: 261px;
+    height: 92px;
+    background-color: #bcdfd1;
   }
 
   /* ------------------------------------------------- */
@@ -227,6 +257,14 @@
     margin-left: 72px;
   }
 
+  .decor-btn {
+    margin-left: 226px;
+    border-radius: 16px;
+    width: 261px;
+    height: 92px;
+    background-color: #bcdfd1;
+  }
+
   /* ------------------------------------------------- */
   .img-text-cont {
     display: flex;
@@ -236,6 +274,7 @@
 
   .hero-img {
     display: block;
+    border-radius: 32px;
     width: 592px;
     height: 444px;
   }

@@ -2,6 +2,18 @@
 /* * {
   border: 1px solid red !important;
 } */
+body.dark-theme .marquee-inner-horizontal {
+  background: #204136;
+}
+body.dark-theme .marquee-line {
+  color: #f0f0f0;
+}
+body.dark-theme .marquee-inner-diagonal {
+  background: #2a2d32;
+}
+body.dark-theme .dot-diagonal {
+  color: #f0f0f0;
+}
 .tech-skills {
   position: relative;
   width: 100%;
@@ -100,7 +112,7 @@
     color: #292929;
   }
   .marquee-diagonal {
-    /* padding: 40px 0px; */
+    background: none;
   }
   .marquee-line-diagonal {
     font-weight: 500;

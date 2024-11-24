@@ -27,6 +27,10 @@
   color: var(--text-color);
 }
 
+.dark-theme .faq-list-title {
+  color: var(--text-color)
+}
+
 .ac .ac-trigger::after {
   content: none;
 }
@@ -70,8 +74,13 @@
   transition: background-color 0.5s ease;
 }
 
-body.dark-theme .is-active {
+.dark-theme .is-active {
   background-color: #204136;
+}
+
+.is-active .faq-btn-svg {
+  transform: rotate(180deg);
+
 }
 
 .is-active .faq-btn-svg {

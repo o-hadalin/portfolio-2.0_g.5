@@ -8,16 +8,16 @@
 <path d="M5.334 23.027v-1.333h21.333v1.333h-21.333zM5.334 16.667v-1.333h21.333v1.333h-21.333zM5.334 10.307v-1.333h21.333v1.333h-21.333z"></path>
 </symbol>
 <symbol fill="none" viewBox="0 0 24 24" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 12H4m6 6-6-6 6-6" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 12H4m6 6-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol fill="none" viewBox="0 0 24 24" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 12h16m-6-6 6 6-6 6" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 12h16m-6-6 6 6-6 6"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol fill="none" viewBox="0 0 24 24" id="icon-drop-up" xmlns="http://www.w3.org/2000/svg">
-<path d="m18 15-6-6-6 6" stroke="#292929" stroke-width="2" stroke-linecap="round"/>
+<path d="m18 15-6-6-6 6"  stroke-width="2" stroke-linecap="round"/>
 </symbol>
 <symbol fill="none" viewBox="0 0 24 24" id="icon-drop-down" xmlns="http://www.w3.org/2000/svg">
-<path d="m18 9-6 6-6-6" stroke="#292929" stroke-width="2" stroke-linecap="round"/>
+<path d="m18 9-6 6-6-6"  stroke-width="2" stroke-linecap="round"/>
 </symbol>
 <symbol id="icon-visit" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6.333 25.667l19.333-19.333M25.667 6.333h-18M25.667 6.333v18"></path>

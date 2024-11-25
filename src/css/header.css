@@ -117,6 +117,10 @@ input:checked+.slider:after {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    height: 96px;
+  }
+
   .header-list {
     display: flex;
     gap: 40px;

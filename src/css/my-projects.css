@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 0 auto;
+  
   }
 
 .title-projects {
@@ -66,6 +66,7 @@
 }
 
 .visit-button {
+  cursor: pointer;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -75,7 +76,7 @@
   padding: 12px 24px;
   width: 125px;
   height: 48px;
-  /* margin-left: auto; */
+  margin-left: auto;
   border: none;
   font-weight: 500;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,6 +97,7 @@
 }
 
 .load-btn {
+  cursor: pointer;
   padding: 12px 24px;
   margin: 0 auto;
   font-weight: 400;
@@ -145,7 +147,7 @@
     font-size: 108px;
     line-height: 115%;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   .list-projects {
     gap: 60px;

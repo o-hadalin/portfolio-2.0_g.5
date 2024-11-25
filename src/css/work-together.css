@@ -154,14 +154,14 @@ body.dark-theme {
     gap: 60px;
     padding-top: 124px;
     padding-bottom: 124px;
-    background-image: url(/img/work-together/bg-work-together-tab.png);
+    background-image: url(./img/work-together/bg-work-together-tab.png);
     background-repeat: no-repeat;
     background-position: right 32px top 4px;
   }
 
   @media (min-resolution: 192dpi) {
     .work-together .container {
-      background-image: url(/img/work-together/bg-work-together-tab@2x.png);
+      background-image: url(./img/work-together/bg-work-together-tab@2x.png);
       background-size: 50%;
     }
   }
@@ -199,14 +199,14 @@ body.dark-theme {
     gap: 80px;
     padding-top: 164px;
     padding-bottom: 164px;
-    background-image: url(/img/work-together/bg-work-together-desk.png);
+    background-image: url(./img/work-together/bg-work-together-desk.png);
     background-repeat: no-repeat;
     background-position: right 32px top 48px;
   }
 
   @media (min-resolution: 192dpi) {
     .work-together .container {
-      background-image: url(/img/work-together/bg-work-together-desk@2x.png);
+      background-image: url(./img/work-together/bg-work-together-desk@2x.png);
       background-size: 50%;
     }
   }

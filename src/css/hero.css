@@ -43,6 +43,7 @@
 
 .hero-btn {
   position: absolute;
+  z-index: 2;
   margin-top: 32px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -70,12 +71,17 @@
 }
 
 .hero-btn::before {
-  content: url(/img/hero/hero-arrow.svg);
+  content: url(/img/hero/hero-arrow-green.svg);
   margin-right: 12px;
 }
+.hero-btn:hover:before {
+  content: url(/img/hero/hero-arrow-white.svg);
+}
 
-.hero-btn:hover+.decor-btn {
+.hero-btn:hover + .decor-btn {
   background-color: #00b068;
+  transform: translatex(-61%);
+  transition: transform 320ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .decor-btn:hover {

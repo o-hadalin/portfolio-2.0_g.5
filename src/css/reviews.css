@@ -1,4 +1,7 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -29,13 +32,13 @@
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 50px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .swiper-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
+  width: 100%;
 }
 
 .swiper-slide {
@@ -43,12 +46,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-items: start;
   text-align: center;
   padding: 20px;
   border-radius: 16px;
   background-color: #e4e5e6;
   height: auto;
+  box-sizing: border-box;
 }
 
 body.dark-theme .swiper-slide {

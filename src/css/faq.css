@@ -40,7 +40,12 @@
   display: block;
   flex-shrink: 0;
   transition: transform 0.5s;
+  stroke: var(--stroke);
 }
+
+/* .dark-theme .faq-btn-svg {
+  stroke: var(--stroke);
+} */
 
 .faq-list-item-text {
   font-weight: 300;

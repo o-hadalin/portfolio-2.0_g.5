@@ -10,22 +10,27 @@ document.addEventListener('DOMContentLoaded', () => {
       enabled: true,
       onlyInViewport: true,
     },
-    slidesPerView: `auto`, 
+    slidesPerView: 1,
     slidesPerGroup: 1,
-    spaceBetween: 0,
-    centeredSlides: false,
+    spaceBetween: 16,
     loop: false,
     freeMode: false,
 
     breakpoints: {
       360: {
-        spaceBetween: 0, 
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 16,
       },
       768: {
-        spaceBetween: 0,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 16,
       },
       1280: {
-        spaceBetween: 0,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 32,
       },
     },
 

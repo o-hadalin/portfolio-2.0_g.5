@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Impact";
-  src: url("../fonts/impact.woff") format("truetype");
+  font-family: 'Impact';
+  src: url('../fonts/impact.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -21,32 +21,44 @@ body {
 
 h1,
 h2 {
-  font-family: "Impact", sans-serif;
+  font-family: 'Impact', sans-serif;
   font-size: 108px;
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
 
 .green-span {
   color: #00b068;
 }
 
+.dark-theme .green-link:hover {
+  color: #14c57c
+}
+
+.dark-theme .green-span {
+  color: #14c57c;
+}
+
 :root {
   --background-color: #ffffff;
   --text-color: #292929;
-  --icon-color: #1b414b;
+  --stroke: #111;
 }
 
 body.dark-theme {
   --background-color: #1E2023;
-  --text-color: #ffffff;
-  --icon-color: #ffff;
+  --text-color: #f0f0f0;
+  --stroke: #fff;
+}
+
+.dark-theme .icon-toggle-color {
+  stroke: var(--stroke);
 }
 
 .icon-toggle-color {
-  stroke: var(--icon-color);
+  stroke: var(--stroke);
   transition: fill 0.5s ease;
 }
 

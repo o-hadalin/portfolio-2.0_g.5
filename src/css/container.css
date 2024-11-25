@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 708px;
+    max-width: 768px;
     padding: 32px;
   }
 }
@@ -23,5 +23,10 @@
   .container {
     max-width: 1280px;
     padding: 32px;
+  }
+
+  button,
+  a {
+    cursor: pointer;
   }
 }

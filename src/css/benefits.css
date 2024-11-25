@@ -1,13 +1,19 @@
-.svg-user,
-.svg-chat,
-.svg-brush,
-.svg-hourglass {
+.svg-chat {
     stroke: #00b068;
     fill: #bcdfd1;
     background-color: #bcdfd1;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
+.dark-theme .svg-chat {
+    stroke: #00b068;
+    fill: #204136;
+    background-color: #204136;
 }
 
 .benefits-list {
@@ -26,49 +32,66 @@
 
 
 .benefits-h2 {
-    font-family: Impact, sans-serif;
-    font-size: 52px;
-    line-height: 1.2;
+    color: var(--text-color);
     letter-spacing: 0.03em;
+    font-size: 52px;
     font-weight: 400;
     text-transform: uppercase;
+    line-height: 123%;
     margin-bottom: 40px;
-
 }
 
 .benefits-item-title {
-    font-family: Poppins, sans-serif;
+    font-family: var(--font-poppins-light);
     font-size: 18px;
     font-weight: 400;
     line-height: 156%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--color-black);
 }
 
 .benefits-item-content {
-
+    font-family: var(--font-poppins-light);
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
+    color: var(--color-black);
 }
 
 
 
 @media screen and (min-width: 360px) {
     .benefits-h2 {
-        font-size: 42px;
-        line-height: 1.3;
+        letter-spacing: 0.03em;
+        font-size: 52px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 123%;
+        color: var(--text-color);
+        margin-bottom: 40px;
+        width: 318px;
+        height: 192px;
     }
 
     .benefits-item-title {
-        font-size: 20px;
-        line-height: 1.4;
+        font-family: var(--font-poppins);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 156%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--color-black);
     }
 
     .benefits-item-content {
-        font-size: 14px;
-        line-height: 1.4;
+        font-family: var(--font-poppins-light);
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: var(--color-black);
     }
 
     .benefits-item {
@@ -79,7 +102,6 @@
 
 @media screen and (min-width: 768px) {
     .benefits-h2 {
-        font-family: Impact, sans-serif;
         letter-spacing: 0.016em;
         font-size: 108px;
         line-height: 115%;
@@ -115,23 +137,15 @@
     .benefits-item-content {
         letter-spacing: 0.05em;
     }
-
-
-    .benefits-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-    }
 }
 
 @media screen and (min-width: 1280px) {
     .benefits-h2 {
-        font-size: 96px;
-        line-height: 1.1;
+        width: 681px;
+        height: 372px;
     }
 
     .benefits-item-content {
-        font-size: 18px;
         letter-spacing: 0.06em;
     }
 

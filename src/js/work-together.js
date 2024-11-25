@@ -9,15 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeModalButton = document.querySelector('.close-confirmation-btn');
   const errorMessage = document.querySelector('.message');
   const iconValid = document.querySelector('.filled-icon');
-
   const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
   function openModal() {
     modal.classList.add('is-open');
+    document.body.classList.add('modal-open');
   }
 
   function closeModal() {
     modal.classList.remove('is-open');
+    document.body.classList.remove('modal-open');
   }
 
   if (localStorage.getItem('email')) {
@@ -91,10 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if (result.title) {
         openModal();
         form.reset();
-
         localStorage.removeItem('email');
         localStorage.removeItem('message');
-
         iconValid.classList.add('invalid');
       }
     } catch (error) {

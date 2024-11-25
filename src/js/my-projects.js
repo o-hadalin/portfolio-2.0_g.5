@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadBtn = document.querySelector('.load-btn');
   const itemsPerLoad = 3;
   let visibleItems = 3;
-  console.log(projectsList);
 
   const updateVisibleItems = () => {
     for (let i = visibleItems; i < visibleItems + itemsPerLoad; i++) {

@@ -122,15 +122,13 @@ body.dark-theme .review-text {
   cursor: pointer;
 }
 
-body.dark-theme .swiper-button-prev,
+/* body.dark-theme .swiper-button-prev,
 .swiper-button-next {
   border-color: #2a2d32;
-   background-color: #292929;
-   /* color: #bbbbbb !important;
-   fill: #bbbbbb !important; */
- }
+  background-color: #292929;
+ } */
 
- body.dark-theme .icon {
+ body.dark-theme svg {
   fill: #F0F0F0;
  }
 
@@ -140,10 +138,10 @@ body.dark-theme .swiper-button-prev,
 }
 
 
-body.dark-theme .swiper-button-prev:hover,
+/* body.dark-theme .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: #2A2D32;
-}
+} */
 
 .swiper-button-prev:disabled,
 .swiper-button-next:disabled {

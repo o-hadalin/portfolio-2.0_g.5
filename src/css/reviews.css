@@ -38,6 +38,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  align-items: start;
   text-align: center;
   padding: 20px;
   border-radius: 16px;
@@ -45,11 +46,20 @@ h2 {
   height: auto;
 }
 
+body.dark-theme .swiper-slide {
+  background-color: #2A2D32;
+}
+
 .review-text {
   font-size: 16px;
   color: #333;
-  margin: 10px 0;
+  margin: 10px 0 24px;
   text-align: left;
+}
+
+body.dark-theme .review-text {
+  color: #f0f0f0;
+  ;
 }
 
 @media (min-width: 1280px) {
@@ -75,7 +85,8 @@ h2 {
 
 .reviewer-info {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
   gap: 10px;
 }
 
@@ -94,7 +105,7 @@ h2 {
 .swiper-buttons-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: 24px;
+  margin-top: 36px;
   gap: 24px;
 }
 
@@ -111,15 +122,38 @@ h2 {
   cursor: pointer;
 }
 
+body.dark-theme .swiper-button-prev,
+.swiper-button-next {
+  border-color: #2a2d32;
+   background-color: #292929;
+   /* color: #bbbbbb !important;
+   fill: #bbbbbb !important; */
+ }
+
+ body.dark-theme .icon {
+  fill: #F0F0F0;
+ }
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: #bbbbbb;
+}
+
+
+body.dark-theme .swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #2A2D32;
 }
 
 .swiper-button-prev:disabled,
 .swiper-button-next:disabled {
   color: #e4e5e6;
   cursor: not-allowed;
+}
+
+body.dark-theme .swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  color: #2A2D32;
 }
 
 .swiper-button-prev:disabled:hover,

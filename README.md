@@ -8,7 +8,7 @@
 
 1. **Тімлід**: Олександр ГАДАЛІН ([o-hadalin](https://github.com/o-hadalin))  
 2. **Скрам-майстер**: Інна ХАЛАС ([Inna-Khalas](https://github.com/Inna-Khalas))  
-3. Андрій РУТС ([AndreyRuts](https://github.com/AndreyRuts))  
+3. Андрій РУТСЬ ([AndreyRuts](https://github.com/AndreyRuts))  
 4. Олексій ЗЕМЛЯНИЙ ([belzevool](https://github.com/belzevool))  
 5. Валерія КАЛАШНИКОВА ([Pepe10k](https://github.com/Pepe10k))  
 6. Інна МІЩЕНКО ([inkamish](https://github.com/inkamish))  

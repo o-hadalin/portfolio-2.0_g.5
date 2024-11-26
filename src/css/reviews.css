@@ -54,7 +54,8 @@
   padding: 20px;
   border-radius: 16px;
   background-color: #e4e5e6;
-  height: auto;
+  height: 224px;
+  box-sizing: border-box;
 }
 
 body.dark-theme .swiper-slide {
@@ -66,6 +67,7 @@ body.dark-theme .swiper-slide {
   color: #333;
   margin: 10px 0 24px;
   text-align: left;
+  overflow: auto;
 }
 
 body.dark-theme .review-text {
@@ -76,6 +78,7 @@ body.dark-theme .review-text {
   .swiper-slide {
     width: calc(50% - 16px);
     flex-basis: calc(50% - 16px);
+    height: 224px;
   }
 }
 
@@ -83,6 +86,7 @@ body.dark-theme .review-text {
   .swiper-slide {
     width: 100%;
     flex-basis: 100%;
+    height: 224px;
   }
 }
 
@@ -91,6 +95,7 @@ body.dark-theme .review-text {
     width: 100%;
     flex-basis: 100%;
     align-items: center;
+    height: 296px;
   }
 }
 
@@ -99,6 +104,7 @@ body.dark-theme .review-text {
   justify-content: flex-start;
   text-align: left;
   gap: 10px;
+  margin-top: auto;
 }
 
 .review-photo {
@@ -131,6 +137,7 @@ body.dark-theme .review-text {
   padding: 12px;
   color: #292929;
   cursor: pointer;
+  box-shadow: 0 1px 2px #14C57C, 0 2px 4px #009156;
 }
 
 .dark-theme .swiper-button-next {

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.reviews .container {
+  padding-bottom: 0;
+}
+
 .reviews-title {
   color: var(--text-color);
   margin-bottom: 60px;
@@ -26,7 +30,7 @@
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 50px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,7 +58,7 @@
 }
 
 body.dark-theme .swiper-slide {
-  background-color: #2A2D32;
+  background-color: #2a2d32;
 }
 
 .review-text {
@@ -66,7 +70,6 @@ body.dark-theme .swiper-slide {
 
 body.dark-theme .review-text {
   color: #f0f0f0;
-  ;
 }
 
 @media (min-width: 1280px) {
@@ -131,13 +134,13 @@ body.dark-theme .review-text {
 }
 
 .dark-theme .swiper-button-next {
-  background-color: #1E2023;
-  border: 1px solid #2A2D32;
+  background-color: #1e2023;
+  border: 1px solid #2a2d32;
 }
 
 .dark-theme .swiper-button-prev {
   border-color: #2a2d32;
-  background-color: #1E2023;
+  background-color: #1e2023;
 }
 
 /* .icon {
@@ -155,10 +158,9 @@ body.dark-theme .review-text {
   background-color: #bbbbbb;
 }
 
-
 .dark-theme .swiper-button-prev:hover,
 .dark-theme .swiper-button-next:hover {
-  background-color: #2A2D32;
+  background-color: #2a2d32;
 }
 
 .swiper-button-prev:disabled,
@@ -169,8 +171,8 @@ body.dark-theme .review-text {
 
 .dark-theme .swiper-button-prev:disabled,
 .dark-theme .swiper-button-next:disabled {
-  background-color: #1E2023;
-  border: 1px solid #2A2D32;
+  background-color: #1e2023;
+  border: 1px solid #2a2d32;
 }
 
 .swiper-button-prev:disabled:hover,

@@ -1,17 +1,15 @@
 .header {
   height: 64px;
-  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
 .header-container {
   display: flex;
-  width: 100%;
+  min-width: 280px;
 }
 
 .header-logo {
@@ -33,7 +31,6 @@
   display: none;
   gap: 4px;
   white-space: nowrap;
-  padding-left: 166px;
 }
 
 .header-link {
@@ -122,7 +119,6 @@ input:checked + .slider:after {
 @media screen and (min-width: 768px) {
   .header {
     height: 96px;
-    padding: 32px;
     position: relative;
   }
 

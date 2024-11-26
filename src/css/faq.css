@@ -1,4 +1,4 @@
-.container {
+.faq {
   padding-bottom: 43px;
 }
 
@@ -40,7 +40,12 @@
   display: block;
   flex-shrink: 0;
   transition: transform 0.5s;
+  stroke: var(--stroke);
 }
+
+/* .dark-theme .faq-btn-svg {
+  stroke: var(--stroke);
+} */
 
 .faq-list-item-text {
   font-weight: 300;
@@ -88,7 +93,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .faq {
     padding-bottom: 124px;
   }
 
@@ -116,7 +121,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .faq {
     padding-bottom: 160px;
   }
 

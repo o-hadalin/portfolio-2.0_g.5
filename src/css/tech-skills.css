@@ -8,7 +8,7 @@ body.dark-theme .marquee-inner-horizontal {
 body.dark-theme .marquee-line {
   color: #f0f0f0;
 }
-body.dark-theme .marquee-inner-diagonal {
+body.dark-theme .marquee-diagonal {
   background: #2a2d32;
 }
 body.dark-theme .dot-diagonal {
@@ -17,7 +17,8 @@ body.dark-theme .dot-diagonal {
 .tech-skills {
   position: relative;
   width: 100%;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 
 /* Горизонтальна стрічка */
@@ -70,14 +71,12 @@ body.dark-theme .dot-diagonal {
 }
 .marquee-diagonal {
   z-index: 10;
-  /* padding: 32px 0px; */
   background: #e4e5e6;
   transform: rotate(+2deg);
 }
 
 .marquee-inner-diagonal {
   animation: marquee 24s linear infinite;
-  /* padding: 32px 0px; */
   transform: rotate(-2deg);
   white-space: nowrap;
 }
@@ -98,11 +97,7 @@ body.dark-theme .dot-diagonal {
   .tech-skills {
     margin-bottom: 124px;
   }
-  .marquee-horizontal {
-    /* padding: 40px 0px; */
 
-    background: #bcdfd1;
-  }
   .marquee-line {
     font-weight: 500;
     font-size: 36px;
@@ -111,9 +106,7 @@ body.dark-theme .dot-diagonal {
     text-transform: uppercase;
     color: #292929;
   }
-  .marquee-diagonal {
-    background: none;
-  }
+
   .marquee-line-diagonal {
     font-weight: 500;
     font-size: 36px;
@@ -124,11 +117,5 @@ body.dark-theme .dot-diagonal {
 @media screen and (min-width: 1158px) {
   .tech-skills {
     margin-bottom: 164px;
-  }
-  .marquee-horizontal {
-    /* padding: 40px 0px; */
-  }
-  .marquee-diagonal {
-    /* padding: 40px 0px; */
   }
 }

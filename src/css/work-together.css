@@ -10,7 +10,7 @@ body.dark-theme {
 }
 
 .icon-toggle-color {
-  stroke: var(--icon-color);
+  stroke: var(--stroke);
   transition: fill 0.5s ease;
 }
 
@@ -289,6 +289,7 @@ body.modal-open {
   stroke-width: 2px;
   stroke: var(--text-color);
 }
+
 .confirmation-title {
   font-weight: 400;
   font-size: 20px;
@@ -299,6 +300,7 @@ body.modal-open {
   color: #00b068;
   margin-bottom: 16px;
 }
+
 .confirmation-text {
   text-align: center;
 }

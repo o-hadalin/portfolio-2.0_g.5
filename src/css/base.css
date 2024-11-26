@@ -1,8 +1,40 @@
 @font-face {
   font-family: 'Impact';
-  src: url('../fonts/impact.woff') format('truetype');
+  src: url('../fonts/impact.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-semibold-webfont.woff') format('woff');
 }
 
 html {
@@ -26,7 +58,7 @@ h2 {
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
 
 .green-span {
@@ -44,17 +76,21 @@ h2 {
 :root {
   --background-color: #ffffff;
   --text-color: #292929;
-  --icon-color: #1b414b;
+  --stroke: #111;
 }
 
 body.dark-theme {
   --background-color: #1E2023;
   --text-color: #f0f0f0;
-  --icon-color: #ffff;
+  --stroke: #fff;
+}
+
+.dark-theme .icon-toggle-color {
+  stroke: var(--stroke);
 }
 
 .icon-toggle-color {
-  stroke: var(--icon-color);
+  stroke: var(--stroke);
   transition: fill 0.5s ease;
 }
 

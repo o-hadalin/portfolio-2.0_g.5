@@ -32,14 +32,13 @@
 
 .container-image {
   border-radius: 16px;
-  width: 320px;
-  height: 184px;
+  min-width: 280px;
   overflow: hidden;
   border: none;
 }
 
 .info-container {
-  width: 320px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -203,7 +202,6 @@
     padding-left: 136px;
     padding-right: 136px;
     padding-bottom: 164px;
-    min-width: 1280px;
   }
   .list-projects {
     gap: 80px;

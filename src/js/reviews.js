@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       enabled: true,
       onlyInViewport: true,
     },
+    autoHeight: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 16,

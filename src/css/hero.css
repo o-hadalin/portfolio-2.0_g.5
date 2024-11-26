@@ -12,7 +12,7 @@
 }
 
 .hero-content-container {
-  width: 360px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 52px;
@@ -28,12 +28,10 @@
 }
 
 .hero-title {
-  width: 320px;
-  height: 240px;
+  font-family: Impact, sans-serif;
   font-weight: 400;
-  font-size: 64px;
-  line-height: 125%;
-  letter-spacing: 0.03em;
+  font-size: 63px;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
@@ -43,10 +41,11 @@
 
 .hero-btn {
   position: absolute;
+  z-index: 2;
   margin-top: 32px;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 160%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -62,7 +61,8 @@
 }
 
 .decor-btn {
-  margin-left: 166px;
+  margin-right: 0;
+  margin-left: auto;
   border-radius: 16px;
   width: 165px;
   height: 92px;
@@ -70,12 +70,18 @@
 }
 
 .hero-btn::before {
-  content: url(/img/hero/hero-arrow.svg);
+  content: url(/img/hero/hero-arrow-green.svg);
   margin-right: 12px;
+  width: 18px;
+}
+.hero-btn:hover:before {
+  content: url(/img/hero/hero-arrow-white.svg);
 }
 
-.hero-btn:hover+.decor-btn {
+.hero-btn:hover + .decor-btn {
   background-color: #00b068;
+  transform: translatex(-76%) scaleX(1.7);
+  transition: transform 320ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .decor-btn:hover {
@@ -96,8 +102,6 @@
 }
 
 .hero-text {
-  width: 320px;
-  height: 140px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -118,7 +122,7 @@
 }
 
 .hero-list {
-  width: 360px;
+  width: 100%;
   height: 232px;
   display: flex;
   flex-direction: column;
@@ -179,7 +183,13 @@ body.dark-theme .hero-list {
     line-height: 119%;
     letter-spacing: 0.01em;
   }
-
+  .btn-decor-container {
+    width: 412px;
+  }
+  .hero-btn:hover + .decor-btn {
+    transform: translatex(-61%);
+    transition: transform 320ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .decor-btn {
     margin-left: 155px;
     border-radius: 16px;
@@ -202,7 +212,6 @@ body.dark-theme .hero-list {
   }
 
   .hero-list {
-    width: 768px;
     height: 104px;
     flex-direction: row;
     gap: 40px;
@@ -252,7 +261,9 @@ body.dark-theme .hero-list {
     line-height: 119%;
     letter-spacing: 0.01em;
   }
-
+  .btn-decor-container {
+    width: 488px;
+  }
   .hero-btn {
     margin-left: 72px;
   }
@@ -294,7 +305,6 @@ body.dark-theme .hero-list {
   }
 
   .hero-list {
-    width: 1280px;
     height: 104px;
   }
 }

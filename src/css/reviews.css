@@ -6,6 +6,7 @@
   color: var(--text-color);
   margin-bottom: 60px;
   font-size: 52px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -86,6 +87,7 @@ body.dark-theme .review-text {
   .swiper-slide {
     width: 100%;
     flex-basis: 100%;
+    align-items: center;
   }
 }
 

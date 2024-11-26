@@ -32,13 +32,11 @@
 
 .container-image {
   border-radius: 16px;
-  min-width: 280px;
   overflow: hidden;
   border: none;
 }
 
 .info-container {
-  min-width: 280px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -77,7 +75,7 @@
   border: none;
   font-weight: 500;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0.1);
+  box-shadow: 0 1px 2px #14c57c, 0 2px 4px #009156;
 }
 
 .visit-button:hover {

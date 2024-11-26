@@ -1,9 +1,11 @@
 .reviews {
   text-align: center;
 }
+
 .reviews .container {
   padding-bottom: 0;
 }
+
 .reviews-title {
   color: var(--text-color);
   margin-bottom: 60px;

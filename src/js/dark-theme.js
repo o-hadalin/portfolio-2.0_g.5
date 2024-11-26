@@ -1,5 +1,5 @@
-const themeToggleHeader = document.querySelector(".header .checkbox-toggle");
-const themeToggleMobile = document.querySelector(".mob-nav .checkbox-toggle");
+const themeToggleHeader = document.querySelector(".header .header-toggle");
+const themeToggleMobile = document.querySelector(".mob-nav .mobile-toggle");
 
 const currentTheme = localStorage.getItem("theme") || "light";
 

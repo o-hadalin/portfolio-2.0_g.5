@@ -6,9 +6,9 @@ const currentTheme = localStorage.getItem("theme") || "light";
 
 function updateFavicon(isDark) {
     if (isDark) {
-        favicon.href = "/img/favicon-dark.svg";
+        favicon.href = "../img/favicon-dark.svg";
     } else {
-        favicon.href = "/img/favicon-light.svg";
+        favicon.href = "../img/favicon-light.svg";
     }
 }
 

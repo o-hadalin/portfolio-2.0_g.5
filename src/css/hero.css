@@ -12,7 +12,7 @@
 }
 
 .hero-content-container {
-  width: 100%;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   padding-bottom: 52px;
@@ -22,16 +22,19 @@
 
 /* ------------------------------------------------- */
 .title-btn-cont {
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 .hero-title {
-  font-family: Impact, sans-serif;
+  width: 320px;
+  height: 240px;
   font-weight: 400;
-  font-size: 63px;
-  line-height: 1.25;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -45,7 +48,7 @@
   margin-top: 32px;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 160%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -61,8 +64,7 @@
 }
 
 .decor-btn {
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 166px;
   border-radius: 16px;
   width: 165px;
   height: 92px;
@@ -72,7 +74,6 @@
 .hero-btn::before {
   content: url(/img/hero/hero-arrow-green.svg);
   margin-right: 12px;
-  width: 18px;
 }
 .hero-btn:hover:before {
   content: url(/img/hero/hero-arrow-white.svg);
@@ -80,12 +81,14 @@
 
 .hero-btn:hover + .decor-btn {
   background-color: #00b068;
-  transform: translatex(-76%) scaleX(1.7);
+  box-shadow: 0 1px 2px rgba(0, 176, 104, 1), 0 2px 4px rgba(0, 176, 104, 1);
+  transform: translatex(-61%);
   transition: transform 320ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .decor-btn:hover {
   background-color: #00b068;
+  box-shadow: 0 1px 2px rgba(0, 176, 104, 1), 0 2px 4px rgba(0, 176, 104, 1);
 }
 
 /* ------------------------------------------------- */
@@ -102,6 +105,8 @@
 }
 
 .hero-text {
+  max-width: 320px;
+  height: 140px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -122,7 +127,7 @@
 }
 
 .hero-list {
-  width: 100%;
+  width: 360px;
   height: 232px;
   display: flex;
   flex-direction: column;
@@ -131,6 +136,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: #e4e5e6;
+  margin: 0 auto;
 }
 
 body.dark-theme .hero-list {
@@ -157,6 +163,7 @@ body.dark-theme .hero-list {
 /* ===================================================== */
 @media screen and (min-width: 768px) {
   .title-btn-cont {
+    max-width: 768px;
     background-repeat: repeat-y;
     background-image: url(/img/hero/bg-hero-tab.png);
     background-position: bottom 396px right 0px;
@@ -164,7 +171,7 @@ body.dark-theme .hero-list {
   }
 
   .hero-content-container {
-    width: 704px;
+    max-width: 704px;
     padding-top: 68px;
     padding-bottom: 84px;
   }
@@ -183,13 +190,7 @@ body.dark-theme .hero-list {
     line-height: 119%;
     letter-spacing: 0.01em;
   }
-  .btn-decor-container {
-    width: 412px;
-  }
-  .hero-btn:hover + .decor-btn {
-    transform: translatex(-61%);
-    transition: transform 320ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+
   .decor-btn {
     margin-left: 155px;
     border-radius: 16px;
@@ -200,7 +201,7 @@ body.dark-theme .hero-list {
 
   /* ------------------------------------------------- */
   .hero-text {
-    width: 704px;
+    max-width: 704px;
     height: 96px;
     font-size: 20px;
     line-height: 160%;
@@ -212,6 +213,7 @@ body.dark-theme .hero-list {
   }
 
   .hero-list {
+    width: 768px;
     height: 104px;
     flex-direction: row;
     gap: 40px;
@@ -223,6 +225,7 @@ body.dark-theme .hero-list {
 /* ======================================================== */
 @media screen and (min-width: 1280px) {
   .title-btn-cont {
+    max-width: 1280px;
     background-repeat: no-repeat;
     background-image: url(/img/hero/bg-hero-desk.png);
     background-position: top 370px right 0px;
@@ -232,7 +235,7 @@ body.dark-theme .hero-list {
   }
 
   .hero-content-container {
-    width: 1216px;
+    max-width: 1216px;
     padding-bottom: 0px;
     gap: 72px;
     display: flex;
@@ -261,9 +264,7 @@ body.dark-theme .hero-list {
     line-height: 119%;
     letter-spacing: 0.01em;
   }
-  .btn-decor-container {
-    width: 488px;
-  }
+
   .hero-btn {
     margin-left: 72px;
   }
@@ -291,7 +292,7 @@ body.dark-theme .hero-list {
   }
 
   .hero-text {
-    width: 592px;
+    max-width: 592px;
     height: 96px;
     font-weight: 400;
     font-size: 20px;
@@ -305,6 +306,7 @@ body.dark-theme .hero-list {
   }
 
   .hero-list {
+    width: 1280px;
     height: 104px;
   }
 }

@@ -6,6 +6,7 @@
   color: var(--text-color);
   margin-bottom: 60px;
   font-size: 52px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -26,9 +27,15 @@
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .swiper-wrapper {
+  width: 100%;
+  flex: 1;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -80,6 +87,7 @@ body.dark-theme .review-text {
   .swiper-slide {
     width: 100%;
     flex-basis: 100%;
+    align-items: center;
   }
 }
 
@@ -107,6 +115,7 @@ body.dark-theme .review-text {
   justify-content: flex-end;
   margin-top: 36px;
   gap: 24px;
+  width: 100%;
 }
 
 .swiper-button-prev,

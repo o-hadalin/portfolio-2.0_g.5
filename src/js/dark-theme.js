@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggleMobile = document.querySelector(".mob-nav .mobile-toggle");
   const favicon = document.querySelector("link[rel='icon']");
 
-  const lightFavicon = "img/favicon-light.svg";
-  const darkFavicon = "img/favicon-dark.svg";
+  const lightFavicon = "../src/img/favicon-light.svg";
+  const darkFavicon = "../src/img/favicon-dark.svg";
 
   const currentTheme = localStorage.getItem("theme") || "light";
 
@@ -40,29 +40,3 @@ document.addEventListener("DOMContentLoaded", () => {
       themeToggleMobile.checked = isDark;
   }
 });
-
-
-
-fetch(lightFavicon)
-  .then(response => {
-    if (response.ok) {
-      console.log("Light favicon is available.");
-    } else {
-      console.error("Light favicon is not available.");
-    }
-  })
-  .catch(error => {
-    console.error("Error fetching the light favicon:", error);
-  });
-
-fetch(darkFavicon)
-  .then(response => {
-    if (response.ok) {
-      console.log("Dark favicon is available.");
-    } else {
-      console.error("Dark favicon is not available.");
-    }
-  })
-  .catch(error => {
-    console.error("Error fetching the dark favicon:", error);
-  });

@@ -2,8 +2,8 @@ const themeToggleHeader = document.querySelector(".header .header-toggle");
 const themeToggleMobile = document.querySelector(".mob-nav .mobile-toggle");
 const favicon = document.querySelector("link[rel='icon']");
 
-const lightFavicon = "./img/favicon-light.svg";
-const darkFavicon = "./img/favicon-dark.svg";
+const lightFavicon = "/img/favicon-light.svg";
+const darkFavicon = "/img/favicon-dark.svg";
 
 const currentTheme = localStorage.getItem("theme") || "light";
 

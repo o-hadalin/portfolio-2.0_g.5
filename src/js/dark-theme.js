@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggleMobile = document.querySelector(".mob-nav .mobile-toggle");
   const favicon = document.querySelector("link[rel='icon']");
 
-  const lightFavicon = "img/favicon-light.svg";
-  const darkFavicon = "img/favicon-dark.svg";
+const basePath = window.location.pathname.includes('/repo-name/') ? '/repo-name/' : '/';
+const lightFavicon = `${basePath}img/favicon-light.svg`;
+const darkFavicon = `${basePath}img/favicon-dark.svg`;
 
   const currentTheme = localStorage.getItem("theme") || "light";
 

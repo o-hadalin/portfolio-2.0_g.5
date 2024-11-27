@@ -1,5 +1,6 @@
 .my-projects {
   text-align: center;
+  padding-bottom: 80px;
 }
 
 .my-projects .container {
@@ -114,6 +115,39 @@
 
 .load-btn:hover {
   color: #009156;
+}
+
+.upp-btn {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #e4e5e6;
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transform: translateX(-50%);
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  font-weight: 500;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px #14c57c, 0 2px 4px #009156;
+}
+
+.upp-btn:hover {
+  background-color: #bbbbbb;
+}
+.dark-theme .upp-btn {
+  background-color: #2a2d32;
+  color: var(--text-color);
+}
+
+.dark-theme .upp-btn:hover {
+  background-color: #3b3f45;
+  color: var(--text-color);
 }
 
 .dark-theme .visit-button {

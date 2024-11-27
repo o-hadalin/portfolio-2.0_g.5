@@ -63,12 +63,17 @@
       </div>
       <div class="img-text-cont">
         <div class="img-bg-container">
-          <img
-            class="hero-img"
-            srcset="/portfolio-2.0_g.5/assets/img-hero-desk-IsuPirMv.jpg 1x, /portfolio-2.0_g.5/assets/img-hero-desk@2x-D-2zL_LH.jpg 2x"
-            src="/portfolio-2.0_g.5/assets/img-hero-desk-IsuPirMv.jpg"
-            alt="some dude"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/portfolio-2.0_g.5/assets/img-hero-desk-IsuPirMv.jpg 1x, /portfolio-2.0_g.5/assets/img-hero-desk@2x-D-2zL_LH.jpg 2x"
+            />
+            <img
+              class="hero-img"
+              src="/portfolio-2.0_g.5/assets/img-hero-desk-IsuPirMv.jpg"
+              alt="A developer's workspace"
+            />
+          </picture>
         </div>
         <p class="hero-text">
           I work with people all over the world to create

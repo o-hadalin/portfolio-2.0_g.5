@@ -1,43 +1,43 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const themeToggleHeader = document.querySelector(".header .header-toggle");
-  const themeToggleMobile = document.querySelector(".mob-nav .mobile-toggle");
-  const favicon = document.querySelector("link[rel='icon']");
+    const themeToggleHeader = document.querySelector(".header .header-toggle");
+    const themeToggleMobile = document.querySelector(".mob-nav .mobile-toggle");
+    const favicon = document.querySelector("link[rel='icon']");
 
-const basePath = window.location.pathname.includes('/repo-name/') ? '/repo-name/' : '/';
-const lightFavicon = `${basePath}img/favicon-light.svg`;
-const darkFavicon = `${basePath}img/favicon-dark.svg`;
+    const basePath = window.location.pathname.includes('/portfolio-2.0_g.5/') ? '/portfolio-2.0_g.5/' : '/';
+    const lightFavicon = `${basePath}img/favicon-light.svg`;
+    const darkFavicon = `${basePath}img/favicon-dark.svg`;
 
-  const currentTheme = localStorage.getItem("theme") || "light";
+    const currentTheme = localStorage.getItem("theme") || "light";
 
-  if (currentTheme === "dark") {
-      document.body.classList.add("dark-theme");
-      favicon.setAttribute("href", darkFavicon);
-      themeToggleHeader.checked = true;
-      themeToggleMobile.checked = true;
-  } else {
-      document.body.classList.remove("dark-theme");
-      favicon.setAttribute("href", lightFavicon);
-      themeToggleHeader.checked = false;
-      themeToggleMobile.checked = false;
-  }
+    if (currentTheme === "dark") {
+        document.body.classList.add("dark-theme");
+        favicon.setAttribute("href", darkFavicon);
+        themeToggleHeader.checked = true;
+        themeToggleMobile.checked = true;
+    } else {
+        document.body.classList.remove("dark-theme");
+        favicon.setAttribute("href", lightFavicon);
+        themeToggleHeader.checked = false;
+        themeToggleMobile.checked = false;
+    }
 
-  themeToggleHeader.addEventListener("change", () => handleThemeToggle(themeToggleHeader));
-  themeToggleMobile.addEventListener("change", () => handleThemeToggle(themeToggleMobile));
+    themeToggleHeader.addEventListener("change", () => handleThemeToggle(themeToggleHeader));
+    themeToggleMobile.addEventListener("change", () => handleThemeToggle(themeToggleMobile));
 
-  function handleThemeToggle(toggle) {
-      const isDark = toggle.checked;
+    function handleThemeToggle(toggle) {
+        const isDark = toggle.checked;
 
-      if (isDark) {
-          document.body.classList.add("dark-theme");
-          favicon.setAttribute("href", darkFavicon);
-          localStorage.setItem("theme", "dark");
-      } else {
-          document.body.classList.remove("dark-theme");
-          favicon.setAttribute("href", lightFavicon);
-          localStorage.setItem("theme", "light");
-      }
+        if (isDark) {
+            document.body.classList.add("dark-theme");
+            favicon.setAttribute("href", darkFavicon);
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.body.classList.remove("dark-theme");
+            favicon.setAttribute("href", lightFavicon);
+            localStorage.setItem("theme", "light");
+        }
 
-      themeToggleHeader.checked = isDark;
-      themeToggleMobile.checked = isDark;
-  }
+        themeToggleHeader.checked = isDark;
+        themeToggleMobile.checked = isDark;
+    }
 });

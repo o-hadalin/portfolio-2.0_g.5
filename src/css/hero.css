@@ -176,7 +176,6 @@ body.dark-theme .hero-list {
 
   .hero-content-container {
     max-width: 704px;
-    padding-top: 68px;
     padding-bottom: 84px;
   }
 
@@ -240,6 +239,7 @@ body.dark-theme .hero-list {
 
   .hero-content-container {
     max-width: 1216px;
+    padding-top: 168px;
     padding-bottom: 0px;
     gap: 72px;
     display: flex;

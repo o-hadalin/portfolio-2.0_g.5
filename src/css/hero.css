@@ -139,6 +139,10 @@
   margin: 0 auto;
 }
 
+ul.hero-list {
+  min-width: 100%;
+}
+
 body.dark-theme .hero-list {
   background-color: #2a2d32;
 }

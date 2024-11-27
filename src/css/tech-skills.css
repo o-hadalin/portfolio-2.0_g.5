@@ -21,6 +21,10 @@ body.dark-theme .dot-diagonal {
   overflow: hidden;
 }
 
+section.tech-skills {
+  min-width: 360px;
+}
+
 /* Горизонтальна стрічка */
 .marquee {
   position: relative;

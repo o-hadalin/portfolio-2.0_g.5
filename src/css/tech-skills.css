@@ -17,6 +17,7 @@ body.dark-theme .dot-diagonal {
 .tech-skills {
   position: relative;
   width: 100%;
+  padding-bottom: 80px;
   overflow: hidden;
 }
 
@@ -98,13 +99,13 @@ section.tech-skills {
 /* ------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .tech-skills {
-    margin-bottom: 124px;
+    padding-bottom: 124px;
   }
 
   .marquee-line {
     font-weight: 500;
     font-size: 36px;
-    line-height: 1.33333;
+    line-height: 1.33;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #292929;
@@ -113,12 +114,12 @@ section.tech-skills {
   .marquee-line-diagonal {
     font-weight: 500;
     font-size: 36px;
-    line-height: 1.33333;
+    line-height: 1.33;
     letter-spacing: 0.01em;
   }
 }
 @media screen and (min-width: 1158px) {
   .tech-skills {
-    margin-bottom: 164px;
+    padding-bottom: 164px;
   }
 }

@@ -8,7 +8,7 @@
 
 .reviews-title {
   color: var(--text-color);
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 52px;
   text-transform: uppercase;
 }
@@ -137,7 +137,7 @@ body.dark-theme .review-text {
   padding: 12px;
   color: #292929;
   cursor: pointer;
-  box-shadow: 0 1px 2px #14C57C, 0 2px 4px #009156;
+  box-shadow: 0 1px 2px #14c57c, 0 2px 4px #009156;
 }
 
 .dark-theme .swiper-button-next {

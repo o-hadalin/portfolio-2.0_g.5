@@ -1,5 +1,5 @@
 .faq {
-  padding-bottom: 43px;
+  padding-bottom: 60px;
 }
 
 .faq-photo {
@@ -28,7 +28,7 @@
 }
 
 .dark-theme .faq-list-title {
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .ac .ac-trigger::after {
@@ -85,7 +85,6 @@
 
 .is-active .faq-btn-svg {
   transform: rotate(180deg);
-
 }
 
 .is-active .faq-btn-svg {

@@ -102,6 +102,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .benefits {
+    padding-bottom: 124px;
+  }
+
   .benefits-h2 {
     letter-spacing: 0.016em;
     font-size: 108px;
@@ -141,6 +145,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .benefits {
+    padding-bottom: 124px;
+  }
+
   .benefits-h2 {
     width: 681px;
     height: 372px;

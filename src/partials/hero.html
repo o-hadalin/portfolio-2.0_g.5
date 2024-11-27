@@ -12,15 +12,20 @@
       </div>
       <div class="img-text-cont">
         <div class="img-bg-container">
-          <img
-            class="hero-img"
-            srcset="
-              ./img/hero/img-hero-desk.jpg    1x,
-              ./img/hero/img-hero-desk@2x.jpg 2x
-            "
-            src="./img/hero/img-hero-desk.jpg"
-            alt="some dude"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/hero/img-hero-desk.jpg    1x,
+                /img/hero/img-hero-desk@2x.jpg 2x
+              "
+            />
+            <img
+              class="hero-img"
+              src="/img/hero/img-hero-desk.jpg"
+              alt="A developer's workspace"
+            />
+          </picture>
         </div>
         <p class="hero-text">
           I work with people all over the world to create

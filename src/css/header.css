@@ -1,10 +1,11 @@
 .header {
   height: 64px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  align-items: center; */
+  min-width: 320px;
+  /* justify-content: center; */
+  /* margin: 0 auto; */
 }
 
 .header-container {
@@ -93,15 +94,15 @@
   display: none;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #204136;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(20px);
 }
 
-input:checked + .slider:after {
+input:checked+.slider:after {
   transform: translateX(20px);
 }
 

@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 300;
   src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
-       url('../fonts/poppins-light-webfont.woff') format('woff');
+    url('../fonts/poppins-light-webfont.woff') format('woff');
 }
 
 @font-face {
@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
-       url('../fonts/poppins-regular-webfont.woff') format('woff');
+    url('../fonts/poppins-regular-webfont.woff') format('woff');
 }
 
 @font-face {
@@ -26,7 +26,7 @@
   font-style: normal;
   font-weight: 500;
   src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
-       url('../fonts/poppins-medium-webfont.woff') format('woff');
+    url('../fonts/poppins-medium-webfont.woff') format('woff');
 }
 
 @font-face {
@@ -34,7 +34,7 @@
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
-       url('../fonts/poppins-semibold-webfont.woff') format('woff');
+    url('../fonts/poppins-semibold-webfont.woff') format('woff');
 }
 
 html {
@@ -66,7 +66,7 @@ h2 {
 }
 
 .dark-theme .green-link:hover {
-  color: #14c57c
+  color: #14c57c;
 }
 
 .dark-theme .green-span {
@@ -74,13 +74,13 @@ h2 {
 }
 
 :root {
-  --background-color: #ffffff;
+  --background-color: #f0f0f0;
   --text-color: #292929;
   --stroke: #111;
 }
 
 body.dark-theme {
-  --background-color: #1E2023;
+  --background-color: #1e2023;
   --text-color: #f0f0f0;
   --stroke: #fff;
 }

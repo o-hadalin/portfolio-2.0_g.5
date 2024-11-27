@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const themeToggleMobile = document.querySelector(".mob-nav .mobile-toggle");
     const favicon = document.querySelector("link[rel='icon']");
 
-    const basePath = window.location.pathname.includes('/portfolio-2.0_g.5/') ? '/portfolio-2.0_g.5/' : '/';
-    const lightFavicon = `${basePath}img/favicon-light.svg`;
-    const darkFavicon = `${basePath}img/favicon-dark.svg`;
+    const lightFavicon = "https://raw.githubusercontent.com/o-hadalin/portfolio-2.0_g.5/main/src/img/favicon-light.svg";
+    const darkFavicon = "https://raw.githubusercontent.com/o-hadalin/portfolio-2.0_g.5/main/src/img/favicon-dark.svg";
 
     const currentTheme = localStorage.getItem("theme") || "light";
 

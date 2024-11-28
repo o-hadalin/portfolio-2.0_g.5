@@ -19,6 +19,7 @@ body.dark-theme {
   flex-direction: column;
   gap: 40px;
   padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .contact-title {
@@ -157,7 +158,8 @@ body.dark-theme {
     padding-bottom: 124px;
     background-image: url(/img/work-together/bg-work-together-tab.png);
     background-repeat: no-repeat;
-    background-position: right 32px top 4px;
+    background-position: right 24px top 0;
+    padding-top: 124px;
   }
 
   @media (min-resolution: 192dpi) {
@@ -202,6 +204,7 @@ body.dark-theme {
     background-image: url(/img/work-together/bg-work-together-desk.png);
     background-repeat: no-repeat;
     background-position: right 32px top 48px;
+    padding-top: 164px;
   }
 
   @media (min-resolution: 192dpi) {

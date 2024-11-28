@@ -114,7 +114,7 @@
   .abt-me-container {
     background-image: url(/img/about-me/bg-about-tab.png);
     background-repeat: no-repeat;
-    background-position: right 0px bottom 300px;
+    background-position: right 30px bottom 176px;
     background-size: 45%;
   }
 
@@ -167,7 +167,7 @@
 
   .abt-me-container {
     background-image: url(/img/about-me/bg-about-desk.png);
-    background-position: right 35px bottom 440px;
+    background-position: right 30px bottom 276px;
     background-size: 30%;
   }
 

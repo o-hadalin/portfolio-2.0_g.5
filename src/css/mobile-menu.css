@@ -10,7 +10,7 @@
   background-color: var(--background-color);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left 50% top 84px;
   position: fixed;
   z-index: 20;
   top: 50%;
@@ -75,6 +75,20 @@
   display: flex;
   justify-content: center;
   margin-top: auto;
+}
+
+@media screen and (max-width: 360px) {
+  .mob-menu {
+    background-size: cover;
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 361px) {
+  .mob-menu {
+    background-size: cover;
+    max-width: 360px;
+  }
 }
 
 @media screen and (min-width: 768px) {

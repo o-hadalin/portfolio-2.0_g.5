@@ -1,5 +1,5 @@
 .faq {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .faq-photo {
@@ -121,7 +121,7 @@
 
 @media screen and (min-width: 1280px) {
   .faq {
-    padding-bottom: 160px;
+    padding-bottom: 164px;
   }
 
   .faq-list {

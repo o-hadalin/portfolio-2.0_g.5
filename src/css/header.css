@@ -123,8 +123,8 @@ input:checked + .slider:after {
   .header {
     height: 96px;
     position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .header-navigation {

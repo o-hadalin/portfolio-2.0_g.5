@@ -1,5 +1,5 @@
 .title-btn-cont {
-  padding-top: 96px;
+  padding-top: 112px;
   background-image: url(/img/hero/bg-hero-mob.png);
   background-position: bottom 234px right 60px;
   background-size: 104%;
@@ -172,6 +172,7 @@ body.dark-theme .hero-list {
     background-image: url(/img/hero/bg-hero-tab.png);
     background-position: bottom 396px right 0px;
     background-size: 52%;
+    padding-top: 88px;
   }
 
   .hero-content-container {

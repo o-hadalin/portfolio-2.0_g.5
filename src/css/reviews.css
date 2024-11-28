@@ -23,11 +23,19 @@
   .reviews-title {
     font-size: 108px;
   }
+
+  .reviews {
+    padding-bottom: 124px;
+  }
 }
 
 @media (min-width: 1280px) {
   .reviews-title {
     font-size: 108px;
+  }
+
+  .reviews {
+    padding-bottom: 164px;
   }
 }
 

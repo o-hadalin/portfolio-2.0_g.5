@@ -5,15 +5,19 @@
 body.dark-theme .marquee-inner-horizontal {
   background: #204136;
 }
+
 body.dark-theme .marquee-line {
   color: #f0f0f0;
 }
+
 body.dark-theme .marquee-diagonal {
   background: #2a2d32;
 }
+
 body.dark-theme .dot-diagonal {
   color: #f0f0f0;
 }
+
 .tech-skills {
   position: relative;
   width: 100%;
@@ -22,7 +26,7 @@ body.dark-theme .dot-diagonal {
 }
 
 section.tech-skills {
-  min-width: 360px;
+  min-width: 100%;
 }
 
 /* Горизонтальна стрічка */
@@ -40,9 +44,11 @@ section.tech-skills {
   justify-content: flex-start;
   padding: 32px 0px;
 }
+
 .marquee-inner-horizontal {
   background: #bcdfd1;
 }
+
 .marquee-line {
   display: flex;
   font-family: 'Poppins', sans-serif;
@@ -56,14 +62,17 @@ section.tech-skills {
   gap: 16px;
   padding-left: 16px;
 }
+
 .dot {
   color: #00b068;
 }
+
 /* Анімація для горизонтальної стрічки */
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -73,6 +82,7 @@ section.tech-skills {
 .dot-diagonal {
   color: #292929;
 }
+
 .marquee-diagonal {
   z-index: 10;
   background: #e4e5e6;
@@ -84,6 +94,7 @@ section.tech-skills {
   transform: rotate(-2deg);
   white-space: nowrap;
 }
+
 .marquee-line-diagonal {
   display: flex;
   font-family: 'Poppins', sans-serif;
@@ -96,6 +107,7 @@ section.tech-skills {
   padding-left: 16px;
   gap: 16px;
 }
+
 /* ------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .tech-skills {
@@ -118,6 +130,7 @@ section.tech-skills {
     letter-spacing: 0.01em;
   }
 }
+
 @media screen and (min-width: 1158px) {
   .tech-skills {
     padding-bottom: 164px;

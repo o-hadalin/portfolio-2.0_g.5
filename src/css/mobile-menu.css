@@ -86,8 +86,8 @@
 
 @media screen and (min-width: 361px) {
   .mob-menu {
-    background-size: cover;
-    max-width: 360px;
+    background-size: contain;
+    width: 100%;
   }
 }
 

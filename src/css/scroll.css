@@ -1,8 +1,8 @@
 .scroll-to-top-btn {
     position: fixed;
     bottom: 20px;
-    right: 5px;
-    background: linear-gradient(135deg, #28a745, #85e085);
+    right: 20px;
+    background: linear-gradient(135deg, #BCDFD1, #00b068);
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -26,15 +26,15 @@
 }
 
 .scroll-to-top-btn:hover {
-    background: linear-gradient(135deg, #1e7e34, #73d973);
+    background: #00B068;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
 }
 
 body.dark-theme .scroll-to-top-btn {
-    background: linear-gradient(135deg, #14C57C, #388e3c);
+    background: linear-gradient(135deg, #14C57C, #00b068);
 }
 
 body.dark-theme .scroll-to-top-btn:hover {
-    background: linear-gradient(135deg, #204136, #43a047);
+    background: #204136;
 }
